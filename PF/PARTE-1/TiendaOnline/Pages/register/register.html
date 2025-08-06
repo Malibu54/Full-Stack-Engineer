@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
 </head>
+
 <body>
     <h1>Formulario de Registro</h1>
 
@@ -12,8 +14,8 @@
         <section>
             <form action="">
                 <div class="input-group">
-                      <label for="">Imagen de avatar</label>
-                  <input type="file" name="image" accept="image/png">
+                    <label for="">Imagen de avatar</label>
+                    <input type="file" name="image" accept="image/png">
                 </div>
 
                 <div class="input-group">
@@ -32,26 +34,29 @@
                     </select>
                 </div>
 
-     <div class="input-group">
-        <input type="checkbox" name="Notificaciones" >Recibir Notificaciones <br>
-        </div>
+                <div class="input-group">
+                    <input type="checkbox" name="Notificaciones">Recibir Notificaciones <br>
+                </div>
 
-        <div class="input-group">
-            <input type="radio" name="gender" value="female"> Femenino <br>
-            <input type="radio" name="gender" value="male"> Masculino <br>
-            <input type="radio" name="gender" value="other"> Otro <br>
-        </div>
-        
-         <div class="input-group">
-             <input type="text">
-         </div>
-     
+                <div class="input-group">
+                    <input type="radio" name="gender" value="female"> Femenino <br>
+                    <input type="radio" name="gender" value="male"> Masculino <br>
+                    <input type="radio" name="gender" value="other"> Otro <br>
+                </div>
 
-        <button>REGISTRAR</button>
-        <button>LIMPIAR</button>
+                <div class="input-group">
+                    <label for="comentarios">Comentarios:</label><br>
+                    <textarea id="comentarios" name="comentarios" rows="5" cols="40"
+                        placeholder="Escribe tu mensaje aquí..."></textarea><br>
+                    <input type="submit" value="Enviar">
+                </div>
+
+
+    
 
             </form>
         </section>
     </main>
 </body>
+
 </html>
