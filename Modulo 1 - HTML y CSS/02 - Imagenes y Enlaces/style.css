@@ -11,3 +11,8 @@ h3{
     text-align: right;
 }
 
+a{
+    text-decoration: none;
+    color: crimson;
+    font-family: sans-serif;
+}
