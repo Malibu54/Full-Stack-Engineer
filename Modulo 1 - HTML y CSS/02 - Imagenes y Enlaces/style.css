@@ -1,17 +1,17 @@
-h2{
+h2 {
     color: crimson;
     background-color: black;
     text-align: center;
     text-decoration: none;
 }
 
-h3{
+h3 {
     color: white;
     background-color: teal;
     text-align: right;
 }
 
-a{
+a {
     text-decoration: none;
     color: crimson;
     font-family: sans-serif;
