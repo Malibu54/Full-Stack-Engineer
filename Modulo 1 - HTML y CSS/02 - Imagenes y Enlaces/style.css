@@ -16,3 +16,9 @@ a {
     color: crimson;
     font-family: sans-serif;
 }
+
+p{
+    text-align: justify;
+    color: tomato;
+    background-color: gray;
+}
