@@ -17,8 +17,14 @@ a {
     font-family: sans-serif;
 }
 
-p{
+/* p{
     text-align: justify;
     color: tomato;
     background-color: indigo;
+} */
+
+
+#nombre{
+    color: violet;
+
 }
