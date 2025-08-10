@@ -1,3 +1,10 @@
+body{
+    background-color: #121212;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(https://cdn.britannica.com/38/111338-050-D23BE7C8/Stars-NGC-290-Hubble-Space-Telescope.jpg);
+}
+
 h2 {
     color: crimson;
     background-color: black;
