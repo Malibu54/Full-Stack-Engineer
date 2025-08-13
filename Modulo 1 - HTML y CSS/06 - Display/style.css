@@ -1,3 +1,9 @@
 h1 {
     background-color: blue;
+    display: inline;
 }
+
+p{
+    background-color: lightblue;
+}
+
