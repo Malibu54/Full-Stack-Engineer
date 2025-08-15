@@ -11,8 +11,15 @@ h1, h3{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+p{
+    color: #6679ac;
+}
 .disney{
     width: 200px;
     height: 100px;
 }
 
+.mickey-minnie{
+    width: 1500px;
+    height: 800px;
+}
