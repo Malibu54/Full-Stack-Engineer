@@ -12,7 +12,7 @@ h3 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-p {
+div {
     color: #6679ac;
 }
 
@@ -22,13 +22,13 @@ p {
 
 }
 
-.disney {
-    width: 200px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.disneys-pop-century-resort {
+    width: 500px;
+    height: 280px;
+    float: right;
+
 }
+
 
 .mickey-minnie {
     width: 1500px;
