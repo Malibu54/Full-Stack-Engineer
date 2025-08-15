@@ -19,7 +19,7 @@ img {
     border: 5px solid white;
 }
 
-.primera-fila{
+.primera-fila {
     max-width: 1400px;
     margin: 2px;
     display: flex;
@@ -29,7 +29,7 @@ img {
     flex-wrap: wrap;
 }
 
-.segunda-fila{
+.segunda-fila {
     max-width: 1400px;
     margin: 2px;
     display: flex;
