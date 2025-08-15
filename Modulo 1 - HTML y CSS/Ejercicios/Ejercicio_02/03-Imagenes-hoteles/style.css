@@ -12,14 +12,18 @@ h3 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+
 div {
     color: #6679ac;
+}
+
+.logo-container {
+    text-align: center;
 }
 
 .logo-disney-hotels {
     width: 500px;
     height: 250px;
-
 }
 
 .disneys-pop-century-resort {
