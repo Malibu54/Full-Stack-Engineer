@@ -1,0 +1,18 @@
+:root {
+    --fuente-lucida: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    font-family: var(--fuente-lucida);
+}
+
+h1, h3{
+    color: #c05497;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.disney{
+    width: 200px;
+    height: 100px;
+}
+
