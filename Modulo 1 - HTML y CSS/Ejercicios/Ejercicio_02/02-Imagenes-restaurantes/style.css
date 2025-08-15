@@ -16,57 +16,12 @@ h1 {
 }
 
 img {
-    border: 5px solid white
-}
-
-
-/* Contenedor principal */
-.gallery-container {
-    background: linear-gradient(135deg, #4a9d7e, #3eb395);
-    padding: 40px 20px;
-    min-height: 100vh;
-}
-
-/* Contenedor de las filas */
-.gallery-grid {
+    border: 5px solid white;
     max-width: 1400px;
     margin: 0 auto;
-}
-
-/* Primera fila - 6 columnas */
-.gallery-row-top {
     display: flex;
     justify-content: center;
     gap: 15px;
     margin-bottom: 15px;
     flex-wrap: wrap;
-}
-
-/* Segunda fila - 4 columnas centradas */
-.gallery-row-bottom {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
-}
-
-/* Estilo de las imágenes */
-.gallery-item {
-    width: 200px;
-    height: 150px;
-    border: 4px solid white;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-.gallery-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.gallery-item:hover img {
-    transform: scale(1.05);
 }
