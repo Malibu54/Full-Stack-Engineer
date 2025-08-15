@@ -6,20 +6,22 @@ body {
     font-family: var(--fuente-lucida);
 }
 
-h1, h3{
+h1,
+h3 {
     color: #c05497;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-p{
+p {
     color: #6679ac;
 }
-.disney{
+
+.disney {
     width: 200px;
     height: 100px;
 }
 
-.mickey-minnie{
+.mickey-minnie {
     width: 1500px;
     height: 800px;
 }
