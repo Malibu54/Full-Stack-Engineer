@@ -17,11 +17,23 @@ h1 {
 
 img {
     border: 5px solid white;
+}
+
+.primera-fila{
     max-width: 1400px;
-    margin: 0 auto;
+    margin: 2px;
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 3px;
     margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.segunda-fila{
+    max-width: 1400px;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    gap: 3px;
     flex-wrap: wrap;
 }
