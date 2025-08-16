@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registro</title>
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/PF/PARTE-1/TiendaOnline/style.css">
-
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/PF/PARTE-1/TiendaOnline/style.css" />
+  </head>
+  <body>
     <!-- Partículas decorativas -->
     <div class="particle"></div>
     <div class="particle"></div>
@@ -19,63 +21,86 @@
 
     <!-- Navegación de regreso -->
     <div class="nav-back">
-        <a href="/PF/PARTE-1/TiendaOnline/index.html">← Volver al inicio</a>
+      <a href="/PF/PARTE-1/TiendaOnline/index.html">← Volver al inicio</a>
     </div>
 
     <h1>Formulario de Registro</h1>
 
     <main>
-        <section>
-            <form action="">
-                <div class="input-group">
-                    <label for="image">Imagen de avatar</label>
-                    <input type="file" name="image" id="image" accept="image/png,image/jpg,image/jpeg">
-                </div>
+      <section>
+        <form action="">
+          <div class="input-group">
+            <label for="image">Imagen de avatar</label>
+            <input
+              type="file"
+              name="image"
+              id="image"
+              accept="image/png,image/jpg,image/jpeg"
+            />
+          </div>
 
-                <div class="input-group">
-                    <label for="nombre">Nombre y Apellido</label>
-                    <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre completo">
-                </div>
+          <div class="input-group">
+            <label for="nombre">Nombre y Apellido</label>
+            <input
+              type="text"
+              name="nombre"
+              id="nombre"
+              placeholder="Ingresa tu nombre completo"
+            />
+          </div>
 
-                <div class="input-group">
-                    <label for="country">Seleccione su país</label>
-                    <select name="country" id="country">
-                        <option value="">-- Selecciona un país --</option>
-                        <option value="AR">Argentina</option>
-                        <option value="UY">Uruguay</option>
-                        <option value="BR">Brasil</option>
-                        <option value="CL">Chile</option>
-                        <option value="PE">Perú</option>
-                        <option value="CO">Colombia</option>
-                    </select>
-                </div>
+          <div class="input-group">
+            <label for="country">Seleccione su país</label>
+            <select name="country" id="country">
+              <option value="">-- Selecciona un país --</option>
+              <option value="AR">Argentina</option>
+              <option value="UY">Uruguay</option>
+              <option value="BR">Brasil</option>
+              <option value="CL">Chile</option>
+              <option value="PE">Perú</option>
+              <option value="CO">Colombia</option>
+            </select>
+          </div>
 
-                <div class="input-group">
-                    <label>
-                        <input type="checkbox" name="notifications" value="yes">
-                        Recibir notificaciones por email
-                    </label>
-                </div>
+          <div class="input-group">
+            <label>
+              <input type="checkbox" name="notifications" value="yes" />
+              Recibir notificaciones por email
+            </label>
+          </div>
 
-                <div class="input-group">
-                    <label>Género:</label>
-                    <label><input type="radio" name="gender" value="female"> Femenino</label><br>
-                    <label><input type="radio" name="gender" value="male"> Masculino</label><br>
-                    <label><input type="radio" name="gender" value="other"> Otro</label><br>
-                </div>
+          <div class="input-group">
+            <label>Género:</label>
+            <label
+              ><input type="radio" name="gender" value="female" />
+              Femenino</label
+            ><br />
+            <label
+              ><input type="radio" name="gender" value="male" />
+              Masculino</label
+            ><br />
+            <label
+              ><input type="radio" name="gender" value="other" /> Otro</label
+            ><br />
+          </div>
 
-                <div class="input-group">
-                    <label for="comentarios">Comentarios adicionales:</label>
-                    <textarea id="comentarios" name="comentarios" rows="5" cols="40"
-                        placeholder="Escribí tu mensaje acá..."></textarea>
-                </div>
+          <div class="input-group">
+            <label for="comentarios">Comentarios adicionales:</label>
+            <textarea
+              id="comentarios"
+              name="comentarios"
+              rows="5"
+              cols="40"
+              placeholder="Escribí tu mensaje acá..."
+            ></textarea>
+          </div>
 
-                <div class="input-group">
-                    <input type="submit" value="Registrarse">
-                </div>
-            </form>
-        </section>
+          <div class="input-group">
+            <input type="submit" value="Registrarse" />
+          </div>
+        </form>
+      </section>
     </main>
     <script src="/PF/PARTE-1/TiendaOnline/main.js"></script>
-</body>
+  </body>
 </html>
