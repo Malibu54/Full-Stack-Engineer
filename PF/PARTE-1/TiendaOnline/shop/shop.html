@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda Online</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/fonts/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-dot" id="cursor-dot"></div>
+
+    <div id="app">
+      <div id="hero">
+        <header>
+          <nav>
+            <a href="/PF/PARTE-1/TiendaOnline/index.html">Principal</a>
+            <a href="/PF/PARTE-1/TiendaOnline/Pages/about-us/about-us.html"
+              >Acerca de</a
+            >
+            <a href="/PF/PARTE-1/TiendaOnline/Pages/gallery/gallery.html"
+              >Galería</a
+            >
+            <a href="/PF/PARTE-1/TiendaOnline/Pages/register/register.html"
+              >Registrarse</a
+            >
+            <a href="/PF/PARTE-1/TiendaOnline/Pages/contact/contact.html"
+              >Contacto</a
+            >
+          </nav>
+          <div>
+            <!-- Login de usuario / carrito de compras -->
+          </div>
+        </header>
+
+        <!-- Estrellas de fondo -->
+    <div class="stars">
+        <div class="star" style="top: 20%; left: 10%;"></div>
+        <div class="star" style="top: 80%; left: 20%;"></div>
+        <div class="star" style="top: 60%; left: 80%;"></div>
+        <div class="star" style="top: 30%; left: 70%;"></div>
+        <div class="star" style="top: 90%; left: 50%;"></div>
+        <div class="star" style="top: 10%; left: 90%;"></div>
+        <div class="star" style="top: 70%; left: 5%;"></div>
+        <div class="star" style="top: 40%; left: 30%;"></div>
+        <div class="star" style="top: 15%; left: 60%;"></div>
+        <div class="star" style="top: 85%; left: 75%;"></div>
+    </div>
+
+    <h1 class="main-title">🚀 Tienda Galáctica 🛸</h1>
+
+    <div class="carousel-container">
+        <div class="carousel-wrapper">
+            <div class="carousel" id="carousel">
+                <!-- Producto 1: Nave Espacial -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-icon">🚀</div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Nave Estelar X-7</h3>
+                        <p class="product-description">
+                            Nave espacial de última generación con motor de antimateria. Capacidad para 12 pasajeros, 
+                            velocidad superlumínica y sistema de navegación cuántica. Perfecta para viajes interplanetarios.
+                        </p>
+                        <div class="product-price">₡ 2,500,000</div>
+                        <button class="buy-button">Comprar Ahora</button>
+                    </div>
+                </div>
+
+                <!-- Producto 2: Traje Espacial -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-icon">👨‍🚀</div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Traje Quantum Pro</h3>
+                        <p class="product-description">
+                            Traje espacial con tecnología de campo de fuerza integrada. Resistente a radiación cósmica, 
+                            temperaturas extremas y micrometeoritos. Incluye sistema de soporte vital por 48 horas.
+                        </p>
+                        <div class="product-price">₡ 85,000</div>
+                        <button class="buy-button">Comprar Ahora</button>
+                    </div>
+                </div>
+
+                <!-- Producto 3: Estación Espacial -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-icon">🛰️</div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Estación Orbital Deluxe</h3>
+                        <p class="product-description">
+                            Estación espacial modular con capacidad para 50 habitantes. Incluye laboratorios, 
+                            jardines hidropónicos, centro de recreación y escudos deflectores. Lista para habitar.
+                        </p>
+                        <div class="product-price">₡ 15,000,000</div>
+                        <button class="buy-button">Comprar Ahora</button>
+                    </div>
+                </div>
+
+                <!-- Producto 4: Robot Explorador -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-icon">🤖</div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">ExploBot 3000</h3>
+                        <p class="product-description">
+                            Robot explorador autónomo con inteligencia artificial avanzada. Análisis geológico, 
+                            mapeo 3D, resistencia a condiciones extremas y comunicación intergaláctica.
+                        </p>
+                        <div class="product-price">₡ 450,000</div>
+                        <button class="buy-button">Comprar Ahora</button>
+                    </div>
+                </div>
+
+                <!-- Producto 5: Telescopio Cósmico -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-icon">🔭</div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">TelescopioCosmos 5000</h3>
+                        <p class="product-description">
+                            Telescopio espacial de alta resolución con lentes de cristal cuántico. Capaz de detectar 
+                            exoplanetas, agujeros negros y civilizaciones avanzadas a millones de años luz.
+                        </p>
+                        <div class="product-price">₡ 1,200,000</div>
+                        <button class="buy-button">Comprar Ahora</button>
+                    </div>
+                </div>
+
+                <!-- Producto 6: Módulo Lunar -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-icon">🌙</div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Base Lunar Alpha</h3>
+                        <p class="product-description">
+                            Módulo habitacional lunar completamente equipado. Generadores de oxígeno, 
+                            cultivos hidropónicos, laboratorio de investigación y comunicaciones terrestres.
+                        </p>
+                        <div class="product-price">₡ 8,750,000</div>
+                        <button class="buy-button">Comprar Ahora</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-controls">
+            <button class="carousel-btn" id="prevBtn">‹</button>
+            <div class="carousel-indicators" id="indicators"></div>
+            <button class="carousel-btn" id="nextBtn">›</button>
+        </div>
+    </div>
+        <footer>
+          <section>
+            <a href="#">Contact</a>
+            <a href="#">RRSS</a>
+            <a href="#">Trabaja con nosotros</a>
+            <a href="#">TyC</a>
+          </section>
+          <section>
+            <a href="#">UN 1</a>
+            <a href="#">UN 2</a>
+            <a href="#">UN 3</a>
+          </section>
+        </footer>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
