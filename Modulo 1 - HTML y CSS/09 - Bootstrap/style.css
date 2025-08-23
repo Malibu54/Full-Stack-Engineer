@@ -1,0 +1,49 @@
+/* Estilos para controlar el tamaño de las imágenes del carrusel */
+.carousel-inner img {
+    height: 400px;
+    /* Altura fija para todas las imágenes */
+    object-fit: cover;
+    /* Mantiene la proporción y recorta si es necesario */
+    object-position: center;
+    /* Centra la imagen */
+}
+
+/* Estilos para el footer */
+.footer {
+    background-color: #343a40;
+    color: white;
+    padding: 40px 0 20px 0;
+    margin-top: 50px;
+}
+
+.footer h5 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.footer p,
+.footer a {
+    color: #adb5bd;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #ffffff;
+}
+
+.footer-bottom {
+    border-top: 1px solid #495057;
+    padding-top: 20px;
+    margin-top: 30px;
+    text-align: center;
+    color: #6c757d;
+}
+
+/* Espaciado adicional */
+body {
+    padding-bottom: 0;
+}
+
+.main-content {
+    min-height: 60vh;
+}
