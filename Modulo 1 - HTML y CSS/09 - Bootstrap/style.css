@@ -1,21 +1,3 @@
-:root {
-  --bs-primary: #8e44ad; /* violeta */
-  --bs-primary-rgb: 142, 68, 173;
-}
-
-.bg-violet {
-  background-color: #8e44ad !important;
-}
-
-.text-violet {
-  color: #8e44ad !important;
-}
-
-.btn-violet {
-  background-color: #8e44ad;
-  border-color: #8e44ad;
-  color: white;
-}
 
 /* Estilos para controlar el tamaño de las imágenes del carrusel */
 .carousel-inner img {
