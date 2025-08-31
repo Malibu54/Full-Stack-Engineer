@@ -1,0 +1,4 @@
+La tipografía debe ser una Fuente importada desde google fonts.
+Los colores y estilos son completamente a elección de ustedes.
+Los estilos de los links, y demás lo mismo.
+Se debe respetar las etiquetas correspondiente a la estructura propuesta por las imagenes de ejemplo.
