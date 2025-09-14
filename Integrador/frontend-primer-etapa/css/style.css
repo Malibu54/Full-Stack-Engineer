@@ -287,12 +287,16 @@
             overflow: hidden;
             height: 100%;
             box-shadow: var(--shadow-sm);
+              color: var(--text-muted);   /* gris definido en tu paleta */
+  opacity: 0.8; 
+            
         }
 
         .product-card:hover {
             transform: translateY(-8px);
             box-shadow: var(--shadow-xl);
             border-color: var(--accent-gold);
+            
         }
 
         .product-image {
@@ -320,7 +324,8 @@
         }
 
         .stock-normal {
-            color: var(--text-muted);
+              color: var(--text-muted);   /* gris definido en tu paleta */
+  opacity: 0.8; 
         }
 
         /* Footer - 3 Columnas Responsive */
@@ -538,4 +543,36 @@
 .registro-form ::placeholder {
   color: var(--light-gray);   /* para destacar sobre fondo oscuro */
   opacity: 0.7;
+}
+
+/* Admin Section */
+.admin-section {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.admin-form {
+  background: rgba(0,0,0,0.4);
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.admin-form label {
+  font-weight: 600;
+  color: var(--accent-gold);
+}
+
+.admin-form input,
+.admin-form textarea,
+.admin-form select {
+  background: var(--secondary-dark);
+  color: var(--text-light);
+  border: 1px solid rgba(243, 156, 18, 0.3);
+}
+
+.admin-form input:focus,
+.admin-form textarea:focus,
+.admin-form select:focus {
+  border-color: var(--accent-gold);
+  box-shadow: 0 0 5px rgba(243, 156, 18, 0.5);
 }
