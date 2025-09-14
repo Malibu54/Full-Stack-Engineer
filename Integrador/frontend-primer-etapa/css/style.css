@@ -494,3 +494,48 @@
   color: var(--accent-gold);
   font-weight: 700;
 }
+
+/* Registro */
+.registro-section {
+  background: rgba(255, 255, 255, 0.05);
+  border-top: 1px solid rgba(243, 156, 18, 0.2);
+}
+
+.registro-form {
+  background: rgba(0, 0, 0, 0.4);
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.registro-form label {
+  font-weight: 600;
+  color: var(--accent-gold);
+}
+
+.registro-form .form-control,
+.registro-form .form-select,
+.registro-form textarea {
+  background: var(--secondary-dark);
+  color: var(--text-light);
+  border: 1px solid rgba(243, 156, 18, 0.3);
+}
+
+.registro-form .form-control:focus,
+.registro-form .form-select:focus,
+.registro-form textarea:focus {
+  border-color: var(--accent-gold);
+  box-shadow: 0 0 5px rgba(243, 156, 18, 0.5);
+}
+
+/* Estilo del texto de los placeholders */
+::placeholder {
+  color: var(--text-muted);   /* gris definido en tu paleta */
+  opacity: 0.8;               /* un poco más tenue */
+}
+
+/* Opcional: dentro de los formularios de registro */
+.registro-form ::placeholder {
+  color: var(--light-gray);   /* para destacar sobre fondo oscuro */
+  opacity: 0.7;
+}
