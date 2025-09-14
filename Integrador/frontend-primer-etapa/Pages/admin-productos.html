@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/Integrador/frontend-primer-etapa/assets/favicon.png"
+      type="image/x-icon"
+    />
+    <meta
+      name="description"
+      content="Luna Shop - La mejor tienda de lunas premium. Descubre nuestra colección exclusiva con Luna Llena, Luna Azul y más. Envío en órbita garantizado."
+    />
+    <meta
+      name="keywords"
+      content="lunas, luna llena, luna nueva, tienda lunar, astronomía, fases lunares"
+    />
+    <meta name="author" content="Luna Shop" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta
+      property="og:title"
+      content="Luna Shop - Tu Tienda de Lunas Premium"
+    />
+    <meta
+      property="og:description"
+      content="Descubre nuestra colección exclusiva de lunas para iluminar tu vida"
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- Security -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline' cdn.jsdelivr.net cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' cdn.jsdelivr.net cdnjs.cloudflare.com; font-src 'self' cdnjs.cloudflare.com;"
+    />
+
+    <title>Luna Shop - Administracion de Productos</title>
+
+    <!-- Preload Critical Resources -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+
+    <!-- CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="/Integrador/frontend-primer-etapa/css/style.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav
+      class="navbar navbar-expand-lg fixed-top"
+      role="navigation"
+      aria-label="Navegación principal"
+    >
+      <div class="container">
+        <a
+          class="navbar-brand"
+          href="/Integrador/frontend-primer-etapa/index.html"
+          aria-label="Luna Shop - Inicio"
+        >
+          <i class="fas fa-moon"></i> Luna Shop
+        </a>
+
+        <!-- Botón hamburguesa -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Alternar navegación"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- Links principales -->
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="/Integrador/frontend-primer-etapa/Pages/principal.html"
+                >Principal</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="/Integrador/frontend-primer-etapa/Pages/Registro.html"
+                >Registro</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre-nosotros">Acerca de nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Integrador/frontend-primer-etapa/Pages/admin-productos.html">Admin Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#productos">Productos</a>
+            </li>
+          </ul>
+
+          <!-- Sección de usuario -->
+          <div class="d-flex align-items-center">
+            <!-- Avatar -->
+            <img
+              src="/Integrador/frontend-primer-etapa/assets/avatar.png"
+              alt="Avatar de usuario"
+              class="rounded-circle me-3"
+              width="32"
+              height="32"
+            />
+
+            <!-- Carrito -->
+            <div class="dropdown">
+              <button
+                class="btn btn-outline-light position-relative"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                aria-label="Ver carrito de compras"
+              >
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-badge" id="cart-count">0</span>
+              </button>
+              <div class="dropdown-menu dropdown-menu-end cart-dropdown">
+                <div class="dropdown-header">Tu Carrito</div>
+                <div id="cart-items" role="list">
+                  <div class="text-center p-3 text-muted">
+                    El carrito está vacío
+                  </div>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="p-3">
+                  <div class="d-flex justify-content-between mb-2">
+                    <strong>Total: $<span id="cart-total">0</span></strong>
+                  </div>
+                  <button class="btn btn-custom btn-sm w-100" disabled>
+                    Proceder al Pago
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+<main>
+
+  <!-- Navbar simple -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><i class="fas fa-moon"></i> Luna Shop - Admin</a>
+    </div>
+  </nav>
+
+  <main class="admin-section py-5 mt-5">
+    <div class="container">
+      <h2 class="text-center mb-5 text-warning">Gestión de Productos</h2>
+
+      <!-- Tabla de productos -->
+      <div class="table-responsive mb-5">
+        <table class="table table-dark table-striped table-hover align-middle">
+          <thead class="table-warning text-dark">
+            <tr>
+              <th>Foto</th>
+              <th>Nombre</th>
+              <th>Descripción</th>
+              <th>Fecha Ingreso</th>
+              <th>Precio</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Ejemplo producto 1 -->
+            <tr>
+              <td><img src="https://picsum.photos/80/80?random=1" class="img-thumbnail"></td>
+              <td>Luna Plateada</td>
+              <td>Decoración elegante y minimalista.</td>
+              <td>05-01-2025</td>
+              <td>$1,200</td>
+              <td>
+                <button class="btn btn-sm btn-outline-light me-2">Editar</button>
+                <button class="btn btn-sm btn-danger">Borrar</button>
+              </td>
+            </tr>
+            <!-- Producto 2 -->
+            <tr>
+              <td><img src="https://picsum.photos/80/80?random=2" class="img-thumbnail"></td>
+              <td>Luna Dorada</td>
+              <td>Colección Premium, edición limitada.</td>
+              <td>06-01-2025</td>
+              <td>$2,500</td>
+              <td>
+                <button class="btn btn-sm btn-outline-light me-2">Editar</button>
+                <button class="btn btn-sm btn-danger">Borrar</button>
+              </td>
+            </tr>
+            <!-- Producto 3 -->
+            <tr>
+              <td><img src="https://picsum.photos/80/80?random=3" class="img-thumbnail"></td>
+              <td>Luna Azul</td>
+              <td>Inspirada en fenómenos lunares únicos.</td>
+              <td>07-01-2025</td>
+              <td>$1,800</td>
+              <td>
+                <button class="btn btn-sm btn-outline-light me-2">Editar</button>
+                <button class="btn btn-sm btn-danger">Borrar</button>
+              </td>
+            </tr>
+            <!-- Producto 4 -->
+            <tr>
+              <td><img src="https://picsum.photos/80/80?random=4" class="img-thumbnail"></td>
+              <td>Luna Roja</td>
+              <td>Edición eclipse, ideal para coleccionistas.</td>
+              <td>08-01-2025</td>
+              <td>$2,000</td>
+              <td>
+                <button class="btn btn-sm btn-outline-light me-2">Editar</button>
+                <button class="btn btn-sm btn-danger">Borrar</button>
+              </td>
+            </tr>
+            <!-- Producto 5 -->
+            <tr>
+              <td><img src="https://picsum.photos/80/80?random=5" class="img-thumbnail"></td>
+              <td>Luna Nueva Misteriosa</td>
+              <td>Perfecta para meditación.</td>
+              <td>09-01-2025</td>
+              <td>$1,899</td>
+              <td>
+                <button class="btn btn-sm btn-outline-light me-2">Editar</button>
+                <button class="btn btn-sm btn-danger">Borrar</button>
+              </td>
+            </tr>
+            <!-- Producto 6 -->
+            <tr>
+              <td><img src="https://picsum.photos/80/80?random=6" class="img-thumbnail"></td>
+              <td>Luna Cuarto Creciente</td>
+              <td>Equilibrio de luz y sombra.</td>
+              <td>10-01-2025</td>
+              <td>$1,899</td>
+              <td>
+                <button class="btn btn-sm btn-outline-light me-2">Editar</button>
+                <button class="btn btn-sm btn-danger">Borrar</button>
+              </td>
+            </tr>
+            <!-- Producto 7 -->
+            <tr>
+              <td><img src="https://picsum.photos/80/80?random=7" class="img-thumbnail"></td>
+              <td>Luna Cuarto Menguante</td>
+              <td>Ideal para cierres de ciclo.</td>
+              <td>11-01-2025</td>
+              <td>$1,750</td>
+              <td>
+                <button class="btn btn-sm btn-outline-light me-2">Editar</button>
+                <button class="btn btn-sm btn-danger">Borrar</button>
+              </td>
+            </tr>
+            <!-- Producto 8 -->
+            <tr>
+              <td><img src="https://picsum.photos/80/80?random=8" class="img-thumbnail"></td>
+              <td>Luna Llena Premium</td>
+              <td>La clásica luna con máxima iluminación.</td>
+              <td>12-01-2025</td>
+              <td>$2,999</td>
+              <td>
+                <button class="btn btn-sm btn-outline-light me-2">Editar</button>
+                <button class="btn btn-sm btn-danger">Borrar</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Formulario de carga de producto -->
+      <h3 class="text-center text-warning mb-4">Cargar nuevo producto</h3>
+      <form class="admin-form">
+        <div class="row g-3">
+          <!-- Name -->
+          <div class="col-md-6">
+            <label class="form-label">Nombre</label>
+            <input type="text" class="form-control" required>
+          </div>
+          <!-- Price -->
+          <div class="col-md-6">
+            <label class="form-label">Precio</label>
+            <input type="number" class="form-control" required>
+          </div>
+          <!-- Descripción -->
+          <div class="col-12">
+            <label class="form-label">Descripción</label>
+            <textarea class="form-control" rows="3"></textarea>
+          </div>
+          <!-- Categoría -->
+          <div class="col-md-6">
+            <label class="form-label">Categoría</label>
+            <select class="form-select" required>
+              <option disabled selected>Seleccionar...</option>
+              <option>Decoración</option>
+              <option>Colección Premium</option>
+              <option>Edición Especial</option>
+            </select>
+          </div>
+          <!-- Imagen URL -->
+          <div class="col-md-6">
+            <label class="form-label">Imagen (URL)</label>
+            <input type="url" class="form-control" required>
+          </div>
+          <!-- Stock -->
+          <div class="col-md-6">
+            <label class="form-label">Stock</label>
+            <input type="number" class="form-control" required>
+          </div>
+          <!-- linkYoutube -->
+          <div class="col-md-6">
+            <label class="form-label">Link YouTube</label>
+            <input type="url" class="form-control">
+          </div>
+          <!-- Features -->
+          <div class="col-12">
+            <label class="form-label d-block">Características</label>
+            <div class="form-check form-check-inline">
+              <input type="checkbox" class="form-check-input" id="feature1">
+              <label class="form-check-label" for="feature1">Envío Gratis</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input type="checkbox" class="form-check-input" id="feature2">
+              <label class="form-check-label" for="feature2">Garantía Extendida</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input type="checkbox" class="form-check-input" id="feature3">
+              <label class="form-check-label" for="feature3">Edición Limitada</label>
+            </div>
+          </div>
+          <!-- Botón -->
+          <div class="col-12">
+            <button type="submit" class="btn btn-custom w-100">Agregar Producto</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+
+
+
+
+  </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row text-center text-md-start">
+          <!-- Columna 1: Logo y nombre -->
+          <div class="col-md-4 mb-4 mb-md-0">
+            <h5><i class="fas fa-moon"></i> Luna Shop</h5>
+            <p>Tu tienda de confianza para lunas de calidad premium.</p>
+          </div>
+
+          <!-- Columna 2: Redes sociales -->
+          <div class="col-md-4 mb-4 mb-md-0">
+            <h5>Síguenos</h5>
+            <div>
+              <a href="#" class="social-link me-3"
+                ><i class="fab fa-facebook fa-2x"></i
+              ></a>
+              <a href="#" class="social-link me-3"
+                ><i class="fab fa-twitter fa-2x"></i
+              ></a>
+              <a href="#" class="social-link me-3"
+                ><i class="fab fa-instagram fa-2x"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Columna 3: Contacto -->
+          <div class="col-md-4">
+            <h5>Contacto</h5>
+            <p>
+              <i class="fas fa-map-marker-alt me-2"></i>Vía Láctea, Sector 7
+            </p>
+            <p><i class="fas fa-phone me-2"></i>+1-800-LUNA-SHOP</p>
+            <p><i class="fas fa-envelope me-2"></i>info@lunashop.galaxy</p>
+          </div>
+        </div>
+
+        <hr class="mt-4" />
+        <div class="text-center">
+          <p>
+            &copy; 2025 Luna Shop. Todos los derechos reservados en todo el
+            universo.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
