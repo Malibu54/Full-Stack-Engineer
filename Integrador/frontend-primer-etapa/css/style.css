@@ -576,3 +576,8 @@
   border-color: var(--accent-gold);
   box-shadow: 0 0 5px rgba(243, 156, 18, 0.5);
 }
+
+.img-thumbnail{
+    width: 80px;
+    height: 80px;
+}
