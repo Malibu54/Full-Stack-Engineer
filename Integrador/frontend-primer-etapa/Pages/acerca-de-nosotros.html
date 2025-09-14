@@ -34,77 +34,73 @@
 </head>
 
 <body>
-    <!-- Skip to main content link for accessibility -->
-    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
 
-    <!-- NavBar -->
-    <nav class="navbar navbar-expand-lg fixed-top" role="navigation" aria-label="Navegación principal">
-        <div class="container">
-            <a class="navbar-brand" href="/Integrador/frontend-primer-etapa/index.html" aria-label="Luna Shop - Inicio">
-                <i class="fas fa-moon"></i> Luna Shop
-            </a>
+<!-- NavBar -->
+<nav class="navbar navbar-expand-lg fixed-top" role="navigation" aria-label="Navegación principal">
+  <div class="container">
+    <!-- Brand -->
+    <a class="navbar-brand" href="/Integrador/frontend-primer-etapa/index.html" aria-label="Luna Shop - Inicio">
+      <i class="fas fa-moon"></i> Luna Shop
+    </a>
 
-            <!-- Botón hamburguesa -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegación">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <!-- Botón hamburguesa -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegación">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <!-- Links principales -->
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/Integrador/frontend-primer-etapa/Pages/principal.html">Principal</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/Integrador/frontend-primer-etapa/Pages/Registro.html">Registro</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link"
-                            href="/Integrador/frontend-primer-etapa/Pages/acerca-de-nosotros.html">Acerca de
-                            nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/Integrador/frontend-primer-etapa/Pages/admin-productos.html">Admin
-                            Productos</a>
-                    </li>
-                </ul>
+    <!-- Menú colapsable -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <!-- Links principales -->
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/Integrador/frontend-primer-etapa/Pages/principal.html">Principal</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/Integrador/frontend-primer-etapa/Pages/Registro.html">Registro</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/Integrador/frontend-primer-etapa/Pages/acerca-de-nosotros.html">Acerca de nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/Integrador/frontend-primer-etapa/Pages/admin-productos.html">Admin Productos</a>
+        </li>
+      </ul>
 
-                <!-- Sección de usuario -->
-                <div class="d-flex align-items-center">
-                    <!-- Avatar -->
-                    <img src="/Integrador/frontend-primer-etapa/assets/avatar.png" alt="Avatar de usuario"
-                        class="rounded-circle me-3" width="32" height="32" />
+      <!-- Sección de usuario -->
+      <div class="d-flex align-items-center ms-3">
+        <!-- Avatar -->
+        <img src="/Integrador/frontend-primer-etapa/assets/avatar.png"
+             alt="Avatar de usuario"
+             class="rounded-circle me-3"
+             width="32" height="32">
 
-                    <!-- Carrito -->
-                    <div class="dropdown">
-                        <button class="btn btn-outline-light position-relative" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false" aria-label="Ver carrito de compras">
-                            <i class="fas fa-shopping-cart"></i>
-                            <span class="cart-badge" id="cart-count">0</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-end cart-dropdown">
-                            <div class="dropdown-header">Tu Carrito</div>
-                            <div id="cart-items" role="list">
-                                <div class="text-center p-3 text-muted">
-                                    El carrito está vacío
-                                </div>
-                            </div>
-                            <div class="dropdown-divider"></div>
-                            <div class="p-3">
-                                <div class="d-flex justify-content-between mb-2">
-                                    <strong>Total: $<span id="cart-total">0</span></strong>
-                                </div>
-                                <button class="btn btn-custom btn-sm w-100" disabled>
-                                    Proceder al Pago
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <!-- Carrito -->
+        <div class="dropdown">
+          <button class="btn btn-outline-light position-relative" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false" aria-label="Ver carrito de compras">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-badge" id="cart-count">0</span>
+          </button>
+
+          <div class="dropdown-menu dropdown-menu-end cart-dropdown" aria-labelledby="cartDropdown">
+            <div class="dropdown-header">Tu Carrito</div>
+            <div id="cart-items" role="list">
+              <div class="text-center p-3 text-muted">El carrito está vacío</div>
             </div>
+            <div class="dropdown-divider"></div>
+            <div class="p-3">
+              <div class="d-flex justify-content-between mb-2">
+                <strong>Total: $<span id="cart-total">0</span></strong>
+              </div>
+              <button class="btn btn-custom btn-sm w-100" disabled>Proceder al Pago</button>
+            </div>
+          </div>
         </div>
-    </nav>
+      </div>
+    </div>
+  </div>
+</nav>
 
     <!-- Main Content -->
     <main class="about-section py-5 mt-5">
@@ -177,6 +173,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
