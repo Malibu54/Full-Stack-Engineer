@@ -101,110 +101,198 @@
   </div>
 </nav>
 
-    <main>
-        <!-- Home Section -->
-        <section id="home" class="home-section">
-            <!-- Banner -->
-            <div class="banner">
-                <img src="/Integrador/frontend-primer-etapa/assets/banner.png" alt="Banner Luna Shop"
-                    class="banner-img" />
-                <div class="banner-overlay">
-                    <h1 class="banner-title">Bienvenido a Luna Shop 🌙</h1>
-                    <p class="banner-subtitle">
-                        Tu destino para lunas y productos celestiales premium
+<main>
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <!-- Banner -->
+        <div class="banner">
+            <img src="/Integrador/frontend-primer-etapa/assets/banner.png" alt="Banner Luna Shop"
+                class="banner-img" />
+            <div class="banner-overlay">
+                <h1 class="banner-title">Despierta tu Alma Cósmica 🌙</h1>
+                <p class="banner-subtitle">
+                    Donde los sueños celestiales cobran vida y la magia lunar ilumina cada rincón de tu hogar
+                </p>
+            </div>
+        </div>
+
+        <!-- Hero Section -->
+        <div class="container hero-container py-5">
+            <div class="row align-items-center">
+                <!-- Texto -->
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="hero-heading">Navega por el Cosmos de Posibilidades</h2>
+                    <p>
+                        En Luna Shop, cada producto es un fragmento de universo cuidadosamente seleccionado para transformar tu espacio en un santuario celestial. Desde piezas que capturan la esencia de las fases lunares hasta tesoros que susurran secretos estelares, aquí encontrarás todo lo necesario para que la magia nocturna dance en tu vida cotidiana.
                     </p>
+                    <a href="#productos-destacados" class="btn btn-custom">✨ Explorar el Cosmos</a>
+                </div>
+                <!-- Imagen -->
+                <div class="col-lg-6 text-center">
+                    <img src="/Integrador/frontend-primer-etapa/assets/Luna_shop.png"
+                        alt="Portal místico Luna Shop" class="img-fluid rounded shadow-lg" />
                 </div>
             </div>
+        </div>
 
-            <!-- Hero Section -->
-            <div class="container hero-container py-5">
-                <div class="row align-items-center">
-                    <!-- Texto -->
-                    <div class="col-lg-6 mb-4 mb-lg-0">
-                        <h2 class="hero-heading">Explora el universo con Luna Shop</h2>
-                        <p>
-                            Ofrecemos productos únicos inspirados en la magia de la luna.
-                            Desde artículos de decoración hasta piezas exclusivas, todo lo
-                            que necesitas para iluminar tus noches está aquí.
-                        </p>
-                        <a href="#productos-destacados" class="btn btn-custom">Ver Productos</a>
+        <!-- Productos Destacados -->
+        <section id="productos" class="products-section" aria-labelledby="productos-heading">
+            <div class="container">
+                <h2 class="text-center mb-5">🌟 Tesoros Celestiales Selectos</h2>
+                <div class="row g-4">
+                    <!-- Producto (repetir 8 veces con diferentes datos) -->
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <article class="card product-card h-100">
+                            <img src="/Integrador/frontend-primer-etapa/assets/luna_plateada.png"
+                                class="card-img-top" alt="Luna Plateada Místical" />
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Luna Plateada Mística</h5>
+                                <p class="card-text text-muted">🎨 Alma Decorativa</p>
+                                <p class="price">$1,200</p>
+                                <small class="text-muted">✨ Llegada: Ene 2025</small>
+                                <div class="mt-auto">
+                                    <a href="/Integrador/frontend-primer-etapa/Pages/detalle-producto.html"
+                                        class="btn btn-sm btn-outline-light me-2">🔍 Descubrir</a>
+                                    <a href="#" class="btn btn-sm btn-warning">🛒 Adoptar</a>
+                                </div>
+                            </div>
+                        </article>
                     </div>
-                    <!-- Imagen -->
-                    <div class="col-lg-6 text-center">
-                        <img src="/Integrador/frontend-primer-etapa/assets/Luna_shop.png"
-                            alt="Imagen representativa Luna Shop" class="img-fluid rounded shadow-lg" />
+                    <!-- Duplica y cambia datos hasta tener 8 productos -->
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <article class="card product-card h-100">
+                            <img src="/Integrador/frontend-primer-etapa/assets/luna_dorada.png" class="card-img-top"
+                                alt="Luna Dorada Celestial" />
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Luna Dorada Celestial</h5>
+                                <p class="card-text text-muted">👑 Colección Estelar</p>
+                                <p class="price">$2,500</p>
+                                <div class="mt-auto">
+                                    <a href="#" class="btn btn-sm btn-warning w-100">🌟 Llevármela</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <article class="card product-card h-100">
+                            <img src="/Integrador/frontend-primer-etapa/assets/luna_plateada.png" class="card-img-top"
+                                alt="Cristal Lunar Etéreo" />
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Cristal Lunar Etéreo</h5>
+                                <p class="card-text text-muted">💎 Energía Cósmica</p>
+                                <p class="price">$1,800</p>
+                                <small class="text-muted">🌙 Edición Limitada</small>
+                                <div class="mt-auto">
+                                    <a href="#" class="btn btn-sm btn-outline-light me-2">🔮 Conectar</a>
+                                    <a href="#" class="btn btn-sm btn-warning">⚡ Energizar</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <article class="card product-card h-100">
+                            <img src="/Integrador/frontend-primer-etapa/assets/luna_dorada.png" class="card-img-top"
+                                alt="Amuleto Estelar" />
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Amuleto Estelar</h5>
+                                <p class="card-text text-muted">🧿 Protección Ancestral</p>
+                                <p class="price">$950</p>
+                                <div class="mt-auto">
+                                    <a href="#" class="btn btn-sm btn-warning w-100">🛡️ Protegerme</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <article class="card product-card h-100">
+                            <img src="/Integrador/frontend-primer-etapa/assets/luna_plateada.png" class="card-img-top"
+                                alt="Esfera Onírica" />
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Esfera Onírica</h5>
+                                <p class="card-text text-muted">🌀 Viajes Astrales</p>
+                                <p class="price">$3,200</p>
+                                <small class="text-muted">🎭 Pieza Única</small>
+                                <div class="mt-auto">
+                                    <a href="#" class="btn btn-sm btn-outline-light me-2">🌌 Soñar</a>
+                                    <a href="#" class="btn btn-sm btn-warning">🚀 Viajar</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <article class="card product-card h-100">
+                            <img src="/Integrador/frontend-primer-etapa/assets/luna_dorada.png" class="card-img-top"
+                                alt="Medallón del Destino" />
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Medallón del Destino</h5>
+                                <p class="card-text text-muted">🔮 Sabiduría Lunar</p>
+                                <p class="price">$1,650</p>
+                                <div class="mt-auto">
+                                    <a href="#" class="btn btn-sm btn-warning w-100">🎯 Encontrar</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <article class="card product-card h-100">
+                            <img src="/Integrador/frontend-primer-etapa/assets/luna_plateada.png" class="card-img-top"
+                                alt="Lámpara Cósmica" />
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Lámpara Cósmica</h5>
+                                <p class="card-text text-muted">💡 Iluminación Mágica</p>
+                                <p class="price">$2,100</p>
+                                <small class="text-muted">⭐ Bestseller</small>
+                                <div class="mt-auto">
+                                    <a href="#" class="btn btn-sm btn-outline-light me-2">💫 Brillar</a>
+                                    <a href="#" class="btn btn-sm btn-warning">🌟 Iluminar</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <article class="card product-card h-100">
+                            <img src="/Integrador/frontend-primer-etapa/assets/luna_dorada.png" class="card-img-top"
+                                alt="Espejo Portal" />
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Espejo Portal</h5>
+                                <p class="card-text text-muted">🪞 Dimensiones Infinitas</p>
+                                <p class="price">$2,750</p>
+                                <div class="mt-auto">
+                                    <a href="#" class="btn btn-sm btn-warning w-100">🌀 Traspasar</a>
+                                </div>
+                            </div>
+                        </article>
                     </div>
                 </div>
             </div>
-
-            <!-- Productos Destacados -->
-            <section id="productos" class="products-section" aria-labelledby="productos-heading">
-                <div class="container">
-                    <h2 class="text-center mb-5">Productos Destacados</h2>
-                    <div class="row g-4">
-                        <!-- Producto (repetir 8 veces con diferentes datos) -->
-                        <div class="col-sm-6 col-md-4 col-lg-3">
-                            <article class="card product-card h-100">
-                                <img src="/Integrador/frontend-primer-etapa/assets/luna_plateada.png"
-                                    class="card-img-top" alt="Luna Plateada" />
-                                <div class="card-body d-flex flex-column">
-                                    <h5 class="card-title">Luna Plateada</h5>
-                                    <p class="card-text text-muted">Decoración</p>
-                                    <p class="price">$1,200</p>
-                                    <small class="text-muted">Ingreso: Ene 2025</small>
-                                    <div class="mt-auto">
-                                        <a href="/Integrador/frontend-primer-etapa/Pages/detalle-producto.html"
-                                            class="btn btn-sm btn-outline-light me-2">Ver más</a>
-                                        <a href="#" class="btn btn-sm btn-warning">Comprar</a>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                        <!-- Duplica y cambia datos hasta tener 8 productos -->
-                        <div class="col-sm-6 col-md-4 col-lg-3">
-                            <article class="card product-card h-100">
-                                <img src="/Integrador/frontend-primer-etapa/assets/luna_dorada.png" class="card-img-top"
-                                    alt="Luna Dorada" />
-                                <div class="card-body d-flex flex-column">
-                                    <h5 class="card-title">Luna Dorada</h5>
-                                    <p class="card-text text-muted">Colección Premium</p>
-                                    <p class="price">$2,500</p>
-                                    <div class="mt-auto">
-                                        <a href="#" class="btn btn-sm btn-warning w-100">Comprar</a>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                        <!-- agrega 6 productos más cambiando imágenes y datos -->
-                    </div>
-                </div>
-            </section>
-
-            <!-- Sección Características -->
-            <section class="caracteristicas py-5">
-                <div class="container">
-                    <h2 class="text-center mb-5">¿Por qué elegirnos?</h2>
-                    <div class="row text-center">
-                        <div class="col-md-4 mb-4">
-                            <i class="fas fa-shipping-fast fa-3x text-warning mb-3"></i>
-                            <h5>Envíos Interplanetarios</h5>
-                            <p>Llevamos tu luna hasta cualquier rincón de la galaxia.</p>
-                        </div>
-                        <div class="col-md-4 mb-4">
-                            <i class="fas fa-certificate fa-3x text-warning mb-3"></i>
-                            <h5>Calidad Premium</h5>
-                            <p>Garantizamos autenticidad y materiales de primera.</p>
-                        </div>
-                        <div class="col-md-4 mb-4">
-                            <i class="fas fa-headset fa-3x text-warning mb-3"></i>
-                            <h5>Atención 24/7</h5>
-                            <p>Estamos aquí para ayudarte en todo momento.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
         </section>
-    </main>
+
+        <!-- Sección Características -->
+        <section class="caracteristicas py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">✨ ¿Por qué somos tu Portal Cósmico Ideal?</h2>
+                <div class="row text-center">
+                    <div class="col-md-4 mb-4">
+                        <i class="fas fa-shipping-fast fa-3x text-warning mb-3"></i>
+                        <h5>🚀 Travesías Interdimensionales</h5>
+                        <p>Transportamos tu tesoro celestial através de portales estelares hasta tu santuario personal, sin importar en qué constelación te encuentres.</p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <i class="fas fa-certificate fa-3x text-warning mb-3"></i>
+                        <h5>👑 Autenticidad Celestial</h5>
+                        <p>Cada pieza es bendecida por artesanos cósmicos y certificada por guardianes de la calidad universal. Solo lo más puro llega a vos.</p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <i class="fas fa-headset fa-3x text-warning mb-3"></i>
+                        <h5>🌙 Conexión Eternal 24/7</h5>
+                        <p>Nuestros guías espirituales permanecen en sintonía cósmica contigo las 24 horas, listos para acompañarte en tu viaje lunar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+</main>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
