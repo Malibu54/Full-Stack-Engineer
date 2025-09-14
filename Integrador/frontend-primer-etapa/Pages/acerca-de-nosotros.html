@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 
+<!-- Head -->
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -32,104 +33,116 @@
         crossorigin="anonymous" />
     <link rel="stylesheet" href="/Integrador/frontend-primer-etapa/css/style.css" />
 </head>
+<!-- Head END-->
 
+<!-- Body -->
 <body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg fixed-top" role="navigation" aria-label="Navegación principal">
+        <div class="container">
+            <!-- Brand -->
+            <a class="navbar-brand" href="/Integrador/frontend-primer-etapa/index.html" aria-label="Luna Shop - Inicio">
+                <i class="fas fa-moon"></i> Luna Shop
+            </a>
 
-<!-- NavBar -->
-<nav class="navbar navbar-expand-lg fixed-top" role="navigation" aria-label="Navegación principal">
-  <div class="container">
-    <!-- Brand -->
-    <a class="navbar-brand" href="/Integrador/frontend-primer-etapa/index.html" aria-label="Luna Shop - Inicio">
-      <i class="fas fa-moon"></i> Luna Shop
-    </a>
+            <!-- Botón hamburguesa -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <!-- Botón hamburguesa -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegación">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+            <!-- Menú colapsable -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Links principales -->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Integrador/frontend-primer-etapa/Pages/principal.html">Principal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Integrador/frontend-primer-etapa/Pages/Registro.html">Registro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="/Integrador/frontend-primer-etapa/Pages/acerca-de-nosotros.html">Acerca de
+                            nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Integrador/frontend-primer-etapa/Pages/admin-productos.html">Admin
+                            Productos</a>
+                    </li>
+                </ul>
 
-    <!-- Menú colapsable -->
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <!-- Links principales -->
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="/Integrador/frontend-primer-etapa/Pages/principal.html">Principal</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/Integrador/frontend-primer-etapa/Pages/Registro.html">Registro</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/Integrador/frontend-primer-etapa/Pages/acerca-de-nosotros.html">Acerca de nosotros</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/Integrador/frontend-primer-etapa/Pages/admin-productos.html">Admin Productos</a>
-        </li>
-      </ul>
+                <!-- Sección de usuario -->
+                <div class="d-flex align-items-center ms-3">
+                    <!-- Avatar -->
+                    <img src="/Integrador/frontend-primer-etapa/assets/avatar.png" alt="Avatar de usuario"
+                        class="rounded-circle me-3" width="32" height="32">
 
-      <!-- Sección de usuario -->
-      <div class="d-flex align-items-center ms-3">
-        <!-- Avatar -->
-        <img src="/Integrador/frontend-primer-etapa/assets/avatar.png"
-             alt="Avatar de usuario"
-             class="rounded-circle me-3"
-             width="32" height="32">
+                    <!-- Carrito -->
+                    <div class="dropdown">
+                        <button class="btn btn-outline-light position-relative" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" aria-label="Ver carrito de compras">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-badge" id="cart-count">0</span>
+                        </button>
 
-        <!-- Carrito -->
-        <div class="dropdown">
-          <button class="btn btn-outline-light position-relative" type="button" data-bs-toggle="dropdown"
-            aria-expanded="false" aria-label="Ver carrito de compras">
-            <i class="fas fa-shopping-cart"></i>
-            <span class="cart-badge" id="cart-count">0</span>
-          </button>
-
-          <div class="dropdown-menu dropdown-menu-end cart-dropdown" aria-labelledby="cartDropdown">
-            <div class="dropdown-header">Tu Carrito</div>
-            <div id="cart-items" role="list">
-              <div class="text-center p-3 text-muted">El carrito está vacío</div>
-            </div>
-            <div class="dropdown-divider"></div>
-            <div class="p-3">
-              <div class="d-flex justify-content-between mb-2">
-                <strong>Total: $<span id="cart-total">0</span></strong>
-              </div>
-              <button class="btn btn-custom btn-sm w-100" disabled>Proceder al Pago</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</nav>
-
-    <!-- Main Content -->
-<main class="about-section py-5 mt-5">
-    <div class="container text-center">
-        <!-- Información del proyecto -->
-        <h2 class="text-warning mb-4">🌙 Nuestra Historia Lunar</h2>
-        <p class="mb-4">Luna Shop nació bajo la luz de una luna llena, cuando soñadores y artesanos se unieron para crear un santuario digital donde la magia nocturna cobra vida. Cada producto que ofrecemos ha sido cuidadosamente seleccionado para despertar la conexión ancestral entre tu alma y los misterios del cosmos. Más que un ecommerce, somos guardianes de experiencias que transforman lo cotidiano en extraordinario.</p>
-
-        <!-- Frase de la empresa -->
-        <blockquote class="blockquote mb-5">
-            <p class="mb-0 fst-italic">✨ "Donde cada compra es un ritual de belleza, y cada cliente, un explorador de la magia lunar." ✨</p>
-        </blockquote>
-
-        <!-- Card del desarrollador -->
-        <div class="row justify-content-center">
-            <div class="col-md-6 col-lg-4">
-                <div class="card developer-card shadow-lg">
-                    <img src="/Integrador/frontend-primer-etapa/assets/developer.png"
-                        alt="Foto del desarrollador" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">🚀 Arquitecta Digital</h5>
-                        <p class="card-text">Desde las profundidades del código hasta las alturas de la experiencia de usuario, este universo digital fue forjado con amor, café de medianoche y la inspiración infinita de las fases lunares. Cada línea de código lleva impresa la pasión por crear experiencias que trascienden la pantalla.</p>
-                        <p class="text-muted">🌟 Neytiri - Tejedora de Sueños Digitales</p>
+                        <div class="dropdown-menu dropdown-menu-end cart-dropdown" aria-labelledby="cartDropdown">
+                            <div class="dropdown-header">Tu Carrito</div>
+                            <div id="cart-items" role="list">
+                                <div class="text-center p-3 text-muted">El carrito está vacío</div>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                            <div class="p-3">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <strong>Total: $<span id="cart-total">0</span></strong>
+                                </div>
+                                <button class="btn btn-custom btn-sm w-100" disabled>Proceder al Pago</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</main>
+    </nav>
+    <!-- NavBar END-->
+
+    <!-- Main -->
+    <main class="about-section py-5 mt-5">
+        <div class="container text-center">
+            <!-- Información del proyecto -->
+            <h2 class="text-warning mb-4">🌙 Nuestra Historia Lunar</h2>
+            <p class="mb-4">Luna Shop nació bajo la luz de una luna llena, cuando soñadores y artesanos se unieron para
+                crear un santuario digital donde la magia nocturna cobra vida. Cada producto que ofrecemos ha sido
+                cuidadosamente seleccionado para despertar la conexión ancestral entre tu alma y los misterios del
+                cosmos. Más que un ecommerce, somos guardianes de experiencias que transforman lo cotidiano en
+                extraordinario.</p>
+
+            <!-- Frase de la empresa -->
+            <blockquote class="blockquote mb-5">
+                <p class="mb-0 fst-italic">✨ "Donde cada compra es un ritual de belleza, y cada cliente, un explorador
+                    de la magia lunar." ✨</p>
+            </blockquote>
+
+            <!-- Card del desarrollador -->
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card developer-card shadow-lg">
+                        <img src="/Integrador/frontend-primer-etapa/assets/developer.png" alt="Foto del desarrollador"
+                            class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">🚀 Arquitecta Digital</h5>
+                            <p class="card-text">Desde las profundidades del código hasta las alturas de la experiencia
+                                de usuario, este universo digital fue forjado con amor, café de medianoche y la
+                                inspiración infinita de las fases lunares. Cada línea de código lleva impresa la pasión
+                                por crear experiencias que trascienden la pantalla.</p>
+                            <p class="text-muted">🌟 Neytiri - Tejedora de Sueños Digitales</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Main END-->
 
     <!-- Footer -->
     <footer class="footer">
@@ -171,7 +184,10 @@
             </div>
         </div>
     </footer>
+    <!-- Footer END-->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+<!-- Body END -->
 
 </html>
