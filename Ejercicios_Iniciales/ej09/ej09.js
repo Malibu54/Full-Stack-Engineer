@@ -20,7 +20,7 @@ let num1 = parseFloat(prompt("Ingresar primer numero: "));
 let num2 = parseFloat(prompt("Ingresar segundo numero: "));
 let operacion = prompt("Ingresar operador (+, -, *, /): ");
 
-
+let resultado;
 
 if (operador == "+"){
     num1 + num2
@@ -32,4 +32,9 @@ if (operador == "+"){
     num1 / num2
 }else{
    alert("Operacion no reconocida, intente de nuevo")
+   resultado = null
+}
+
+if (resultado !== null){
+    alert(`${num1} ${operacion} ${num2} = ${resultado}`)
 }
