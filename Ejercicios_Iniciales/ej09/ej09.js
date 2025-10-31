@@ -16,3 +16,20 @@ Algoritmo en pseudocodigo:
 5. MOSTRAR resultado
 */
 
+let num1 = parseFloat(prompt("Ingresar primer numero: "));
+let num2 = parseFloat(prompt("Ingresar segundo numero: "));
+let operacion = prompt("Ingresar operador (+, -, *, /): ");
+
+
+
+if (operador == "+"){
+    num1 + num2
+}else if (operador == "-"){
+    num1 - num2
+}else if (operador == "*"){
+    num1 * num2
+}else if (operador == "/"){
+    num1 / num2
+}else{
+   alert("Operacion no reconocida, intente de nuevo")
+}
