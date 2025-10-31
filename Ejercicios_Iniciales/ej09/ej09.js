@@ -22,14 +22,14 @@ let operacion = prompt("Ingresar operador (+, -, *, /): ");
 
 let resultado;
 
-if (operador == "+"){
-    num1 + num2
-}else if (operador == "-"){
-    num1 - num2
-}else if (operador == "*"){
-    num1 * num2
-}else if (operador == "/"){
-    num1 / num2
+if (operador === "+"){
+    resultado = num1 + num2
+}else if (operador === "-"){
+    resultado = num1 - num2
+}else if (operador === "*"){
+    resultado = num1 * num2
+}else if (operador === "/"){
+    resultado = num1 / num2
 }else{
    alert("Operacion no reconocida, intente de nuevo")
    resultado = null
