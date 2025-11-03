@@ -11,3 +11,4 @@ const auto = {
 
 console.log (auto)
 
+let mensajeDinamico = 
