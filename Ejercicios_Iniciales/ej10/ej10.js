@@ -11,4 +11,5 @@ const auto = {
 
 console.log (auto)
 
-let mensajeDinamico = 
+let mensajeDinamico = (`El auto ${auto.marca} es uno de los autos más potentes en el mercado alcanzando una velocidad de  ${auto.velocidadMaxima} por hora!`)
+
