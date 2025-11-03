@@ -18,7 +18,7 @@ Algoritmo en pseudocodigo:
 
 let num1 = parseFloat(prompt("Ingresar primer numero: "));
 let num2 = parseFloat(prompt("Ingresar segundo numero: "));
-let operacion = prompt("Ingresar operador (+, -, *, /): ");
+let operador = prompt("Ingresar operador (+, -, *, /): ");
 
 let resultado;
 
@@ -36,5 +36,5 @@ if (operador === "+"){
 }
 
 if (resultado !== null){
-    alert(`${num1} ${operacion} ${num2} = ${resultado}`)
+    alert(`${num1} ${operador} ${num2} = ${resultado}`)
 }
