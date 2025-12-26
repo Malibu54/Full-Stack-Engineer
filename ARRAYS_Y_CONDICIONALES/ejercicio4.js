@@ -8,10 +8,3 @@
  */
 
 let numeros = [23, 45, 12, 67, 34, 89, 21]
-
-for (let i = 1; i <= 90; i++) {
-    let resultado = i * numero;
-    if (resultado > 1000) {
-        break;
-    }
-    console.log(numero + " x " + i + " = " + resultado);
