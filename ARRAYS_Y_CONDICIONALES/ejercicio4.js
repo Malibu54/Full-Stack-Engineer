@@ -1,10 +1,15 @@
-// no tiene que ser perfecto
-// esta bien si no se o me equivoco
-// solo tiene que existir
 
-/***
- * 
- * Dado un array de números [23, 45, 12, 67, 34, 89, 21], escribe un programa que use un bucle para encontrar el número más grande. Usa condicionales para comparar los valores
- */
+let numeros = [23, 45, 12, 67, 34, 89, 21];
 
-let numeros = [23, 45, 12, 67, 34, 89, 21]
+let maximo = numeros[0]; 
+
+for (let i = 0; i < numeros.length; i++) {
+    
+    // 3. Si el número que estoy viendo es mayor al que tengo guardado...
+    if (numeros[i] > maximo) {
+        // ...lo reemplazo
+        maximo = numeros[i];
+    }
+}
+console.log("El número más grande es: " + maximo);
+
