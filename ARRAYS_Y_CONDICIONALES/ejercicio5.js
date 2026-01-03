@@ -1,6 +1,4 @@
-
-
-let filas = parseInt(prompt("¿Cuántos asteriscos queres? (1-7):"));
+let filas = parseInt(prompt("¿Cuántas líneas queres pegarte? (1-7):"));
 
 for (let i = filas; i >= 1; i--) {
   let linea = "";
