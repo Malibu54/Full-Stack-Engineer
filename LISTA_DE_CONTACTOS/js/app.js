@@ -55,4 +55,9 @@ function addContact(contactData) {
     return true
 }
 
-
+function updateContact(contactId, contactData) {
+    //Validar datos
+    if(){
+        
+    }
+}
