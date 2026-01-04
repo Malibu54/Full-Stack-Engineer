@@ -57,7 +57,23 @@ function addContact(contactData) {
 
 function updateContact(contactId, contactData) {
     //Validar datos
-    if(){
-         
+    if(newContact.email = true){
+         alert("El mail se encuentra registrado ya")
+         return false
     }
+    //Agregar al array
+    contactData.push(newContact)
+
+    //GuardarLocalStorage
+    saveToLocalStorageTable()
+
+    //Limpiar formulario
+    clearForm()
+
+    //Mostrar mensaje de ok
+    alert("Contacto agregado correctamente")
+}
+
+function updateContact(contactId,ContactData) {
+    
 }
