@@ -92,4 +92,75 @@ function updateContact(contactId, ContactData) {
         alert(" Este email ya esta registrado para otro contacto")
         return false
     }
+
+    //Actualizar el contacto manteniendo el ID original
+    contact[index] = {
+        id: contactId,
+        name: contactData.name.trim(),
+        email: contactData.email.trim(),
+        phone: contactData.phone.trim(),
+        birthdate: contactData.birthDate,
+        imageUrl: contactData.imageUrl.trim()
+    }
+
+    //Guardar camnios 
+    saveToLocalStorage()
+
+    //Actualizar vista 
+    renderContactTable()
+
+    //Limpiar formulario y resetear modo edicion
+    clearForm()
+    editingContactId = null
+
+    //Mostrar mensaje ok
+    alert("Contacto actualizado correctamente")
+
+    return true
 }
+
+function deleteContact(contactId) {
+
+    contact = getContactById(contactId)
+
+    if(contact = null){
+        alert("Contacto no encontrado")
+        return false
+    }
+    
+    /** Solicitar confirmacion con SweetAlert
+     * MOSTRAR diálogo de confirmación {
+        título: "¿Estás seguro?",
+        mensaje: "¿Deseas eliminar a " + contact.name + "?",
+        texto: "Esta acción no se puede deshacer",
+        tipo: "warning",
+        botones: ["Cancelar", "Sí, eliminar"],
+        icono: peligro
+    }
+     * */
+
+    //Esperar respuetsa del usuario
+
+    //Si el usuario confirma
+if (user = true){
+    index = findContactIndexById(contactId)
+
+    //Eliminar del array
+    contact.splice(index,1)
+
+    //Guardar cambios
+    saveToLocalStorage()
+
+    //Actualizar vista
+    saveToLocalStorageTable()
+
+    //Mostra mensaje ok
+    alert("Contacto eliminado correctamente")
+    return true
+}else{
+    //Usuario cancelo
+    alert("Operacion cancelada")
+    return false
+}   
+}
+
