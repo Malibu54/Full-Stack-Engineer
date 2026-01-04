@@ -5,7 +5,7 @@
  * Carga inicial de contactos
  * */ 
 
-function initializeApp(params) {
+function initializeApp() {
     contacts = loadFromLocalStorage()
 
     if(contacts = null || 0){
@@ -18,3 +18,6 @@ function initializeApp(params) {
     
 }
 
+function ddContact(contactData) {
+    
+}
