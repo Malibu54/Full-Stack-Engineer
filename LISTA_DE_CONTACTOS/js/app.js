@@ -164,3 +164,23 @@ if (user = true){
 }   
 }
 
+function getContactById(contactId) {
+    //usar bucle de for
+
+    /**
+     * INICIO getContactById(contactId)
+    PARA CADA contact EN contacts HACER
+        SI contact.id === contactId ENTONCES
+            RETORNAR contact
+        FIN SI
+    FIN PARA
+    
+    RETORNAR null
+FIN getContactById
+     */
+    
+}
+
+function findContactIndexById(contactId) {
+    for()
+}
