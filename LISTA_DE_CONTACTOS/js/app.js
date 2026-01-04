@@ -31,5 +31,9 @@ function addContact(contactData) {
         imageUrl: contactData.imageUrl.trim()
     }
     //verifica si el email del contacto ya se encuentra registrado
+    if (newContact.email = true){
+        alert("Este email ya se encuentra registrado")
+        return false 
+    }
     
 }
