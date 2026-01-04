@@ -75,5 +75,18 @@ function updateContact(contactId, contactData) {
 }
 
 function updateContact(contactId,ContactData) {
+    if(validateForm != contactData){
+        alert("Completa todos los campos obligatorios")
+        return false
+    }
+
+    //Buscar el indice del contacto
+    index = findContactIndexById(contactId)
+
+    if(index === -1){
+        alert("Contacto no encontrado")
+    }
+
+    //Verificar si el nuevo email ya existe en otro contacto
     
 }
