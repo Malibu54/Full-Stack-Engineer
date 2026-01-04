@@ -50,7 +50,7 @@ function addContact(contactData) {
     clearForm()
 
     //Mostrar mensaje de ok
-    alert("Contacto agregado correctamente")
+    console.alert("Contacto agregado correctamente")
 
     return true
 }
@@ -71,12 +71,12 @@ function updateContact(contactId, contactData) {
     clearForm()
 
     //Mostrar mensaje de ok
-    alert("Contacto agregado correctamente")
+    console.alert("Contacto agregado correctamente")
 }
 
 function updateContact(contactId, ContactData) {
     if (validateForm != contactData) {
-        alert("Completa todos los campos obligatorios")
+        console.alert("Completa todos los campos obligatorios")
         return false
     }
 
@@ -84,12 +84,12 @@ function updateContact(contactId, ContactData) {
     index = findContactIndexById(contactId)
 
     if (index === -1) {
-        alert("Contacto no encontrado")
+        console.alert("Contacto no encontrado")
     }
 
     //Verificar si el nuevo email ya existe en otro contacto
     if (existEmail = contactData.email, contactId) {
-        alert(" Este email ya esta registrado para otro contacto")
+        console.alert(" Este email ya esta registrado para otro contacto")
         return false
     }
 
@@ -114,7 +114,7 @@ function updateContact(contactId, ContactData) {
     editingContactId = null
 
     //Mostrar mensaje ok
-    alert("Contacto actualizado correctamente")
+    console.alert("Contacto actualizado correctamente")
 
     return true
 }
@@ -124,7 +124,7 @@ function deleteContact(contactId) {
     contact = getContactById(contactId)
 
     if (contact = null) {
-        alert("Contacto no encontrado")
+        console.alert("Contacto no encontrado")
         return false
     }
 
@@ -155,11 +155,11 @@ function deleteContact(contactId) {
         saveToLocalStorageTable()
 
         //Mostra mensaje ok
-        alert("Contacto eliminado correctamente")
+        console.alert("Contacto eliminado correctamente")
         return true
     } else {
         //Usuario cancelo
-        alert("Operacion cancelada")
+        console.alert("Operacion cancelada")
         return false
     }
 }
@@ -221,11 +221,40 @@ try {
 }
     catch (error){
         console.error("Error al guardar:", error)
-        alert("Error al guardar los datos")
+        console.alert("Error al guardar los datos")
         return false
     }
-
 }
 
-    
+function loadFromLocalStorage(contacts) {
+    try {
+        //Obtener datos de localStorage
+        jsonData = localStorage.getItem('contacts')
+        if(jsonData = null){
+            return []
+        }
+        //Convertir JSON --> Array
+        contacts = JSON.parse(jsonData)
+        return contacts
+    } catch (error) {
+        console.error("error al cargar: ", error)
+        return []
+    }
+}
 
+function clearAllData(contactData) {
+    /**
+     *     MOSTRAR diálogo de confirmación {
+        título: "⚠️ Advertencia",
+        mensaje: "¿Eliminar TODOS los contactos?",
+        texto: "Esta acción borrará toda tu lista",
+        tipo: "warning"
+    }
+     */
+    if(user = true){
+localStorage.removeItem('contacts')
+contacts = []
+renderContactsTable()
+console.alert("Todos los contactos han sido eliminados")
+    }
+}
