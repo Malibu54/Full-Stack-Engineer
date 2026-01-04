@@ -191,3 +191,21 @@ function findContactIndexById(contactId) {
     return -1
 }
 
+function existEmail(email, excludeContactId) {
+    const emailLower = email.toLowerCase();
+
+    for (const contact of contacts) {
+        if (!contact.email) continue;  
+
+        if (contact.email.toLowerCase() === emailLower) {
+            
+            if (excludeContactId == null || contact.id !== excludeContactId) {
+                return true;
+            }
+        }
+    }
+
+    return false;
+}
+
+
