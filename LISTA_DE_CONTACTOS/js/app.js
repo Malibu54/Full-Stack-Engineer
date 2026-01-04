@@ -123,11 +123,11 @@ function deleteContact(contactId) {
 
     contact = getContactById(contactId)
 
-    if(contact = null){
+    if (contact = null) {
         alert("Contacto no encontrado")
         return false
     }
-    
+
     /** Solicitar confirmacion con SweetAlert
      * MOSTRAR diálogo de confirmación {
         título: "¿Estás seguro?",
@@ -142,26 +142,26 @@ function deleteContact(contactId) {
     //Esperar respuetsa del usuario
 
     //Si el usuario confirma
-if (user = true){
-    index = findContactIndexById(contactId)
+    if (user = true) {
+        index = findContactIndexById(contactId)
 
-    //Eliminar del array
-    contact.splice(index,1)
+        //Eliminar del array
+        contact.splice(index, 1)
 
-    //Guardar cambios
-    saveToLocalStorage()
+        //Guardar cambios
+        saveToLocalStorage()
 
-    //Actualizar vista
-    saveToLocalStorageTable()
+        //Actualizar vista
+        saveToLocalStorageTable()
 
-    //Mostra mensaje ok
-    alert("Contacto eliminado correctamente")
-    return true
-}else{
-    //Usuario cancelo
-    alert("Operacion cancelada")
-    return false
-}   
+        //Mostra mensaje ok
+        alert("Contacto eliminado correctamente")
+        return true
+    } else {
+        //Usuario cancelo
+        alert("Operacion cancelada")
+        return false
+    }
 }
 
 function getContactById(contactId) {
@@ -178,14 +178,16 @@ function getContactById(contactId) {
     RETORNAR null
 FIN getContactById
      */
-    
+
 }
 
 function findContactIndexById(contactId) {
 
-for (let i = 0; i < contacts.length; i--) {
-    if (contacts[i].id === contactId) {
-       return i
-}}
-return -1
+    for (let i = 0; i < contacts.length; i--) {
+        if (contacts[i].id === contactId) {
+            return i
+        }
+    }
+    return -1
 }
+
