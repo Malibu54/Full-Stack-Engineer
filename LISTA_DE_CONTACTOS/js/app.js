@@ -5,8 +5,6 @@
  * Carga inicial de contactos
  * */
 
-
-
 function initializeApp() {
     contacts = loadFromLocalStorage()
 
