@@ -182,5 +182,10 @@ FIN getContactById
 }
 
 function findContactIndexById(contactId) {
-    for()
+
+for (let i = 0; i < contacts.length; i--) {
+    if (contacts[i].id === contactId) {
+       return i
+}}
+return -1
 }
