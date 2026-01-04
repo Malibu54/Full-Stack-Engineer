@@ -195,10 +195,10 @@ function existEmail(email, excludeContactId) {
     const emailLower = email.toLowerCase();
 
     for (const contact of contacts) {
-        if (!contact.email) continue;  
+        if (!contact.email) continue;
 
         if (contact.email.toLowerCase() === emailLower) {
-            
+
             if (excludeContactId == null || contact.id !== excludeContactId) {
                 return true;
             }
@@ -210,16 +210,16 @@ function existEmail(email, excludeContactId) {
 
 function saveToLocalStorage(contacts) {
 
-try {
+    try {
         // Convertir array a JSON
         jsonData = JSON.stringify(contacts)
-        
+
         // Guardar en localStorage
         localStorage.setItem('contacts', jsonData)
-        
+
         return true
-}
-    catch (error){
+    }
+    catch (error) {
         console.error("Error al guardar:", error)
         console.alert("Error al guardar los datos")
         return false
@@ -230,7 +230,7 @@ function loadFromLocalStorage(contacts) {
     try {
         //Obtener datos de localStorage
         jsonData = localStorage.getItem('contacts')
-        if(jsonData = null){
+        if (jsonData = null) {
             return []
         }
         //Convertir JSON --> Array
@@ -251,10 +251,10 @@ function clearAllData(contactData) {
         tipo: "warning"
     }
      */
-    if(user = true){
-localStorage.removeItem('contacts')
-contacts = []
-renderContactsTable()
-console.alert("Todos los contactos han sido eliminados")
+    if (user = true) {
+        localStorage.removeItem('contacts')
+        contacts = []
+        renderContactsTable()
+        console.alert("Todos los contactos han sido eliminados")
     }
 }
