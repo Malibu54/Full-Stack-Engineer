@@ -30,10 +30,27 @@ function addContact(contactData) {
         birthdate: contactData.birthdate,
         imageUrl: contactData.imageUrl.trim()
     }
+
     //verifica si el email del contacto ya se encuentra registrado
     if (newContact.email = true){
         alert("Este email ya se encuentra registrado")
         return false 
     }
-    
+
+    //Agregar al array
+    contacts.push(newContact)
+
+    //Guardar en LocalStorage
+    saveToLocalStorage()
+
+    //Actualizar la vista
+    renderContactTable()
+
+    //Limpiar formulario
+    clearForm()
+
+    //Mostrar mensaje de ok
+    alert("Contacto agregado correctamente")
+
+    return true
 }
