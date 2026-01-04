@@ -5,4 +5,16 @@
  * Carga inicial de contactos
  * */ 
 
-console.log('App de Contactos iniciada');
+function initializeApp(params) {
+    contacts = loadFromLocalStorage()
+
+    if(contacts = null || 0){
+        contacts = []
+    }
+    renderContactTable()
+
+    setupEventListeners()
+    console.log('App de Contactos iniciada');
+    
+}
+
