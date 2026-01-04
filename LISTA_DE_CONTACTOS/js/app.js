@@ -208,5 +208,23 @@ function existEmail(email, excludeContactId) {
     return false;
 }
 
-
+function saveToLocalStorage(params) {
+    /***
+     * INICIO saveToLocalStorage
+    INTENTAR
+        // Convertir array a JSON
+        jsonData = JSON.stringify(contacts)
+        
+        // Guardar en localStorage
+        localStorage.setItem('contacts', jsonData)
+        
+        RETORNAR true
+    CAPTURAR error
+        console.error("Error al guardar:", error)
+        MOSTRAR alerta "Error al guardar los datos"
+        RETORNAR false
+    FIN INTENTAR
+FIN saveToLocalStorage
+     */
+}
 
