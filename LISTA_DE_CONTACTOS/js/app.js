@@ -18,15 +18,9 @@ function initializeApp() {
 
 }
 
-/**INICIO main
-    // Esperar a que el DOM esté completamente cargado
-    CUANDO documento esté listo ENTONCES
-        initializeApp()
-        
-        console.log("Sistema de gestión de contactos iniciado")
-        console.log("Total de contactos:", contacts.length)
-    FIN CUANDO
-FIN main
-
-// Ejecutar al cargar la página
-main() */
+document.addEventListener('DOMContentLoaded', function() {
+    initializeApp();
+    
+    console.log("Sistema de gestión de contactos iniciado");
+    console.log("Total de contactos:", contacts.length);
+});
