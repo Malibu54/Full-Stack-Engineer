@@ -8,14 +8,13 @@
 function initializeApp() {
     contacts = loadFromLocalStorage()
 
-    if (contacts = null || 0) {
+    if (contacts === null || contacts.length === 0) {
         contacts = []
     }
     renderContactTable()
 
     setupEventListeners()
     console.log('App de Contactos iniciada');
-
 }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -24,3 +23,4 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log("Sistema de gestión de contactos iniciado");
     console.log("Total de contactos:", contacts.length);
 });
+
