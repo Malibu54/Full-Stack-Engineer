@@ -118,17 +118,23 @@ function deleteContact(contactId) {
         return false
     }
 
-    /** Solicitar confirmacion con SweetAlert
-     * MOSTRAR diálogo de confirmación {
-        título: "¿Estás seguro?",
-        mensaje: "¿Deseas eliminar a " + contact.name + "?",
-        texto: "Esta acción no se puede deshacer",
-        tipo: "warning",
-        botones: ["Cancelar", "Sí, eliminar"],
-        icono: peligro
-    }
-     * */
-
+    Swal.fire({
+  title: "¿Estás seguro?",
+  text: "¿Deseas eliminar a " + contact.name + "?",
+  icon: "warning",
+  showCancelButton: true,
+  confirmButtonColor: "#3085d6",
+  cancelButtonColor: "#d33",
+  confirmButtonText: "Si, eliminart!"
+}).then((result) => {
+  if (result.isConfirmed) {
+    Swal.fire({
+      title: "Eliminar",
+      text: "Esta acción no se puede deshacer",
+      icon: "success"
+    });
+  }
+});
     //Esperar respuetsa del usuario
 
     //Si el usuario confirma
