@@ -7,7 +7,7 @@
  * getContactById() - Obtener un contacto específico
  * saveToLocalStorage() - Persistir datos
  * loadFromLocalStorage() - Cargar datos
- * */ 
+ * */
 
 
 function addContact(contactData) {
@@ -119,22 +119,22 @@ function deleteContact(contactId) {
     }
 
     Swal.fire({
-  title: "¿Estás seguro?",
-  text: "¿Deseas eliminar a " + contact.name + "?",
-  icon: "warning",
-  showCancelButton: true,
-  confirmButtonColor: "#3085d6",
-  cancelButtonColor: "#d33",
-  confirmButtonText: "Si, eliminart!"
-}).then((result) => {
-  if (result.isConfirmed) {
-    Swal.fire({
-      title: "Eliminar",
-      text: "Esta acción no se puede deshacer",
-      icon: "success"
+        title: "¿Estás seguro?",
+        text: "¿Deseas eliminar a " + contact.name + "?",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Si, eliminart!"
+    }).then((result) => {
+        if (result.isConfirmed) {
+            Swal.fire({
+                title: "Eliminar",
+                text: "Esta acción no se puede deshacer",
+                icon: "success"
+            });
+        }
     });
-  }
-});
     //Esperar respuetsa del usuario
 
     //Si el usuario confirma
