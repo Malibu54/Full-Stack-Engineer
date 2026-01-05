@@ -161,20 +161,17 @@ function deleteContact(contactId) {
 }
 
 function getContactById(contactId) {
-    //usar bucle de for
-
-    /**
-     * INICIO getContactById(contactId)
-    PARA CADA contact EN contacts HACER
-        SI contact.id === contactId ENTONCES
-            RETORNAR contact
-        FIN SI
-    FIN PARA
+    for (let i = 0; i < contacts.length; i++) {
+        let contact = contacts[i];
+        
+        // Si el id coincide, retornamos el contacto
+        if (contact.id === contactId) {
+            return contact;
+        }
+    }
     
-    RETORNAR null
-FIN getContactById
-     */
-
+    // Si no se encontró ningún contacto, retornamos null
+    return null;
 }
 
 function findContactIndexById(contactId) {
