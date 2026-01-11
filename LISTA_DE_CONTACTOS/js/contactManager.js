@@ -163,13 +163,13 @@ function deleteContact(contactId) {
 function getContactById(contactId) {
     for (let i = 0; i < contacts.length; i++) {
         let contact = contacts[i];
-        
+
         // Si el id coincide, retornamos el contacto
         if (contact.id === contactId) {
             return contact;
         }
     }
-    
+
     // Si no se encontró ningún contacto, retornamos null
     return null;
 }
@@ -236,14 +236,25 @@ function loadFromLocalStorage(contacts) {
 }
 
 function clearAllData(contactData) {
-    /**
-     *     MOSTRAR diálogo de confirmación {
-        título: "⚠️ Advertencia",
-        mensaje: "¿Eliminar TODOS los contactos?",
-        texto: "Esta acción borrará toda tu lista",
-        tipo: "warning"
-    }
-     */
+
+    Swal.fire({
+        title: "Advertencia",
+        text: "¿Eliminar TODOS los contactos?!",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Yes, delete it!"
+    }).then((result) => {
+        if (result.isConfirmed) {
+            Swal.fire({
+                title: "Eliminado",
+                text: "Esta acción borrará toda tu lista",
+                icon: "success"
+            });
+        }
+    });
+
     if (user = true) {
         localStorage.removeItem('contacts')
         contacts = []
