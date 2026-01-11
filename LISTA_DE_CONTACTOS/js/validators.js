@@ -5,48 +5,48 @@
  * validatePhone() - Validar teléfono
  * validateDate() - Validar fecha de nacimiento
  * validateForm() - Validación completa del formulario
- * */ 
+ * */
 
 function validateForm(contactData) {
-   /**
-    * INICIO validateForm(contactData)
-    errors = []
-    
-    // Validar nombre
-    SI NO validateName(contactData.name) ENTONCES
-        errors.push("El nombre es obligatorio y debe tener al menos 2 caracteres")
-    FIN SI
-    
-    // Validar email
-    SI NO validateEmail(contactData.email) ENTONCES
-        errors.push("El email no es válido")
-    FIN SI
-    
-    // Validar teléfono
-    SI NO validatePhone(contactData.phone) ENTONCES
-        errors.push("El teléfono es obligatorio")
-    FIN SI
-    
-    // Validar fecha de nacimiento
-    SI NO validateBirthdate(contactData.birthdate) ENTONCES
-        errors.push("La fecha de nacimiento no es válida")
-    FIN SI
-    
-    // Validar URL de imagen (si se proporciona)
-    SI contactData.imageUrl !== "" Y NO validateImageUrl(contactData.imageUrl) ENTONCES
-        errors.push("La URL de la imagen no es válida")
-    FIN SI
-    
-    SI errors.length > 0 ENTONCES
-        // Mostrar todos los errores
-        MOSTRAR alerta de error con lista de errores
-        RETORNAR false
-    FIN SI
-    
-    RETORNAR true
-FIN validateForm
-    */
-    
+    /**
+     * INICIO validateForm(contactData)
+     errors = []
+     
+     // Validar nombre
+     SI NO validateName(contactData.name) ENTONCES
+         errors.push("El nombre es obligatorio y debe tener al menos 2 caracteres")
+     FIN SI
+     
+     // Validar email
+     SI NO validateEmail(contactData.email) ENTONCES
+         errors.push("El email no es válido")
+     FIN SI
+     
+     // Validar teléfono
+     SI NO validatePhone(contactData.phone) ENTONCES
+         errors.push("El teléfono es obligatorio")
+     FIN SI
+     
+     // Validar fecha de nacimiento
+     SI NO validateBirthdate(contactData.birthdate) ENTONCES
+         errors.push("La fecha de nacimiento no es válida")
+     FIN SI
+     
+     // Validar URL de imagen (si se proporciona)
+     SI contactData.imageUrl !== "" Y NO validateImageUrl(contactData.imageUrl) ENTONCES
+         errors.push("La URL de la imagen no es válida")
+     FIN SI
+     
+     SI errors.length > 0 ENTONCES
+         // Mostrar todos los errores
+         MOSTRAR alerta de error con lista de errores
+         RETORNAR false
+     FIN SI
+     
+     RETORNAR true
+ FIN validateForm
+     */
+
 }
 
 function validateName(name) {
@@ -89,7 +89,7 @@ function validateEmail(email) {
     RETORNAR regex.test(emailTrimmed)
 FIN validateEmail
      */
-    
+
 }
 
 function validatePhone(phone) {
@@ -146,19 +146,19 @@ FIN validateBirthdate
 }
 
 function validateImageUrl(url) {
-   /**
-    * INICIO validateImageUrl(url)
-    SI url es null O vacío ENTONCES
-        RETORNAR true // Es opcional
-    FIN SI
-    
-    urlTrimmed = url.trim()
-    
-    // Expresión regular para validar URL
-    regex = /^https?:\/\/.+\..+/
-    
-    RETORNAR regex.test(urlTrimmed)
-FIN validateImageUrl */ 
+    /**
+     * INICIO validateImageUrl(url)
+     SI url es null O vacío ENTONCES
+         RETORNAR true // Es opcional
+     FIN SI
+     
+     urlTrimmed = url.trim()
+     
+     // Expresión regular para validar URL
+     regex = /^https?:\/\/.+\..+/
+     
+     RETORNAR regex.test(urlTrimmed)
+ FIN validateImageUrl */
 }
 
 function renderContactsTable(params) {
@@ -248,7 +248,7 @@ function editContact(contactId) {
     scrollToForm()
 FIN editContact
      */
-    
+
 }
 
 function clearForm(params) {
@@ -303,16 +303,16 @@ function handleFormSubmit() {
         birthdate: document.getElementById('birthdate').value,
         imageUrl: document.getElementById('imageUrl').value
     }
-    
+
     contactId = document.getElementById('contactId').value
-    
+
     if (editingContactId !== null) {
         // Modo edición
         updateContact(editingContactId, contactData)
-}else{
+    } else {
         // Modo agregar
         addContact(contactData)
-        }
     }
+}
 
 
