@@ -158,7 +158,7 @@ function validateImageUrl(url) {
     return regex.test(urlTrimmed)
 }
 
-function renderContactsTable(params) {
+function renderContactsTable() {
     /**INICIO renderContactsTable
     tbody = obtener elemento 'contactsBody'
     
