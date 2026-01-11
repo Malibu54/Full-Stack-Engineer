@@ -260,17 +260,17 @@ function clearForm() {
 }
 
 function setupEventListeners() {
-    /**INICIO setupEventListeners
+
     // Event listener para el formulario 
     form = document.getElementById('contactForm')
-    form.addEventListener('submit', FUNCIÓN(event) {
+    form.addEventListener('submit', function(contactForm) {
         event.preventDefault()
         handleFormSubmit()
     })
     
     // Event listener para el botón cancelar
     cancelBtn = document.getElementById('cancelBtn')
-    cancelBtn.addEventListener('click', FUNCIÓN() {
+    cancelBtn.addEventListener('click', function(contactFrom) {
         clearForm()
     })
     
@@ -279,7 +279,7 @@ function setupEventListeners() {
     document.getElementById('email').addEventListener('blur', validarCampoEmail)
     document.getElementById('phone').addEventListener('blur', validarCampoPhone)
     document.getElementById('birthdate').addEventListener('blur', validarCampoBirthdate)
-FIN setupEventListeners */
+
 }
 
 function handleFormSubmit() {
