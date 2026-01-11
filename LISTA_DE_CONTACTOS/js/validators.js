@@ -264,7 +264,7 @@ function setupEventListeners() {
     // Event listener para el formulario 
     form = document.getElementById('contactForm')
     form.addEventListener('submit', function(contactForm) {
-        contactForm.preventDefault()
+        contactFrom.preventDefault()
         handleFormSubmit()
     })
     
