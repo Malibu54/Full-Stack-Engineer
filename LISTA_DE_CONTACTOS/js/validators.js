@@ -146,15 +146,15 @@ FIN validateBirthdate
 }
 
 function validateImageUrl(url) {
-     if (url=null) {
+    if (url = null) {
         validateImageUrl(url)
-        return true 
-     
-     urlTrimmed = url.trim()
-     }
-     // Expresión regular para validar URL
-     regex = /^https?:\/\/.+\..+/
-     
+        return true
+
+        urlTrimmed = url.trim()
+    }
+    // Expresión regular para validar URL
+    regex = /^https?:\/\/.+\..+/
+
     return regex.test(urlTrimmed)
 }
 
