@@ -92,15 +92,15 @@ function validateEmail(email) {
 function validatePhone(phone) {
     /**
      * INICIO validatePhone(phone)
-    SI phone es null O vacío ENTONCES
-        RETORNAR false
-    FIN SI
+   if (phone == null) {
+        return false
+    }
     
     phoneTrimmed = phone.trim()
     
-    SI phoneTrimmed.length < 7 ENTONCES
-        RETORNAR false
-    FIN SI
+  if (phoneTrimmed.length< 7) {
+        return false
+   }
     
     // Permitir números, espacios, guiones, paréntesis y signo +
     regex = /^[\d\s\-\(\)\+]+$/
