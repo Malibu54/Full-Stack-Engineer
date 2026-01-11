@@ -249,7 +249,6 @@ FIN editContact
 }
 
 function clearForm() {
-    /**INICIO clearForm
     // Limpiar todos los campos
     document.getElementById('contactForm').reset()
     document.getElementById('contactId').value = ""
@@ -265,7 +264,6 @@ function clearForm() {
     
     // Remover clases de validación
     removerClasesValidacion()
-FIN clearForm */
 }
 
 function setupEventListeners() {
