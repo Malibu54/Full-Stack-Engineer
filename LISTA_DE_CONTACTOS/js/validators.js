@@ -311,5 +311,3 @@ function handleFormSubmit() {
         addContact(contactData)
     }
 }
-
-
