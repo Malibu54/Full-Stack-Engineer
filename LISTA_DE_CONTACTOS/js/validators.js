@@ -146,19 +146,16 @@ FIN validateBirthdate
 }
 
 function validateImageUrl(url) {
-    /**
-     * INICIO validateImageUrl(url)
-     SI url es null O vacío ENTONCES
-         RETORNAR true // Es opcional
-     FIN SI
+     if (url=null) {
+        validateImageUrl(url)
+        return true 
      
      urlTrimmed = url.trim()
-     
+     }
      // Expresión regular para validar URL
      regex = /^https?:\/\/.+\..+/
      
-     RETORNAR regex.test(urlTrimmed)
- FIN validateImageUrl */
+    return regex.test(urlTrimmed)
 }
 
 function renderContactsTable(params) {
@@ -273,7 +270,7 @@ FIN clearForm */
 
 function setupEventListeners(params) {
     /**INICIO setupEventListeners
-    // Event listener para el formulario
+    // Event listener para el formulario 
     form = document.getElementById('contactForm')
     form.addEventListener('submit', FUNCIÓN(event) {
         event.preventDefault()
