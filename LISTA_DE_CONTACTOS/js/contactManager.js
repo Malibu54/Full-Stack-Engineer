@@ -164,13 +164,13 @@ function getContactById(contactId) {
     for (let i = 0; i < contacts.length; i++) {
         let contact = contacts[i];
 
-        // Si el id coincide, retornamos el contacto
+        // Si el id coincide, retorna el contacto
         if (contact.id === contactId) {
             return contact;
         }
     }
 
-    // Si no se encontró ningún contacto, retornamos null
+    // Si no se encontró ningún contacto, retorna null
     return null;
 }
 
