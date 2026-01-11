@@ -46,7 +46,6 @@ function validateForm(contactData) {
      RETORNAR true
  FIN validateForm
      */
-
 }
 
 function validateName(name) {
@@ -75,11 +74,10 @@ FIN validateName
 }
 
 function validateEmail(email) {
-    /**
-     * INICIO validateEmail(email)
-    SI email es null O vacío ENTONCES
-        RETORNAR false
-    FIN SI
+validateEmail(email)
+    if (email == null){
+        return false
+       }
     
     emailTrimmed = email.trim()
     
