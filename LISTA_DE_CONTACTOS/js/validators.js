@@ -74,18 +74,18 @@ FIN validateName
 }
 
 function validateEmail(email) {
-validateEmail(email)
-    if (email == null){
+    validateEmail(email)
+    if (email == null) {
         return false
-       }
-    
+    }
+
     emailTrimmed = email.trim()
-    
+
     // Expresión regular para validar email
     regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-    
+
     return regex.test(emailTrimmed)
-validateEmail
+    validateEmail
 
 
 }
@@ -250,16 +250,16 @@ function clearForm() {
     // Limpiar todos los campos
     document.getElementById('contactForm').reset()
     document.getElementById('contactId').value = ""
-    
+
     // Resetear el estado del formulario
     editingContactId = null
-    
+
     // Restaurar título y botón original
     document.getElementById('formTitle').textContent = "Agregar Contacto"
-    document.getElementById('submitBtn').innerHTML = 
+    document.getElementById('submitBtn').innerHTML =
         "<i class='bi bi-plus-circle me-2'></i>Agregar Contacto"
     document.getElementById('cancelBtn').style.display = "none"
-    
+
     // Remover clases de validación
     removerClasesValidacion()
 }
