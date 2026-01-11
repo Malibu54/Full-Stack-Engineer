@@ -292,7 +292,6 @@ FIN setupEventListeners */
 }
 
 function handleFormSubmit() {
-
     contactData = {
         name: document.getElementById('name').value,
         email: document.getElementById('email').value,
