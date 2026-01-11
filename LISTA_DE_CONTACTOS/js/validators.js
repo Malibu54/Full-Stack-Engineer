@@ -69,8 +69,7 @@ function validateName(name) {
     regex = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s'-]+$/
     
     return regex.test(nameTrimmed)
-FIN validateName
-     */
+
 }
 
 function validateEmail(email) {
