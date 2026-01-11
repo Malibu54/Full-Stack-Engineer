@@ -49,8 +49,7 @@ function validateForm(contactData) {
 }
 
 function validateName(name) {
-    /**
-     * INICIO validateName(name)
+validateName(name)
     if (name == null){
         return false
     }
