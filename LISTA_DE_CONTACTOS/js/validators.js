@@ -147,8 +147,10 @@ function validateImageUrl(url) {
         validateImageUrl(url)
         return true
 
-        urlTrimmed = url.trim()
+        
     }
+
+    urlTrimmed = url.trim()
     // Expresión regular para validar URL
     regex = /^https?:\/\/.+\..+/
 
