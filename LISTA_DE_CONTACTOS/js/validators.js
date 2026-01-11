@@ -144,8 +144,6 @@ function validateImageUrl(url) {
     if (url = null) {
         validateImageUrl(url)
         return true
-
-
     }
 
     urlTrimmed = url.trim()
