@@ -49,7 +49,7 @@ function validateForm(contactData) {
 }
 
 function validateName(name) {
-  
+
     if (name == null) {
         return false
     }
@@ -73,7 +73,7 @@ function validateName(name) {
 }
 
 function validateEmail(email) {
-  
+
     if (email == null) {
         return false
     }
@@ -91,20 +91,20 @@ function validateEmail(email) {
 
 function validatePhone(phone) {
 
-   if (phone == null) {
+    if (phone == null) {
         return false
     }
-    
+
     phoneTrimmed = phone.trim()
-    
-  if (phoneTrimmed.length< 7) {
+
+    if (phoneTrimmed.length < 7) {
         return false
-   }
-    
+    }
+
     // Permitir números, espacios, guiones, paréntesis y signo +
     regex = /^[\d\s\-\(\)\+]+$/
-    
-   return regex.test(phoneTrimmed)
+
+    return regex.test(phoneTrimmed)
 
 }
 
