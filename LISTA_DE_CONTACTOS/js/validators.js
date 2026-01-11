@@ -49,24 +49,25 @@ function validateForm(contactData) {
 }
 
 function validateName(name) {
-validateName(name)
-    if (name == null){
+    validateName(name)
+    if (name == null) {
         return false
     }
-    
+
     nameTrimmed = name.trim()
-    
-    if (nameTrimmed.length < 2){
+
+    if (nameTrimmed.length < 2) {
         return false
     }
-    
+
     if (nameTrimmed.length > 100) {
         return false
-    F}
-    
+        F
+    }
+
     // Verificar que contenga solo letras, espacios y algunos caracteres especiales
     regex = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s'-]+$/
-    
+
     return regex.test(nameTrimmed)
 
 }
