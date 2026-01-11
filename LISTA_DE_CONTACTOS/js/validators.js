@@ -51,15 +51,15 @@ function validateForm(contactData) {
 function validateName(name) {
     /**
      * INICIO validateName(name)
-    SI name es null O vacío ENTONCES
-        RETORNAR false
-    FIN SI
+    if (name == null){
+        return false
+    }
     
     nameTrimmed = name.trim()
     
-    SI nameTrimmed.length < 2 ENTONCES
-        RETORNAR false
-    FIN SI
+    if (nameTrimmed.length < 2){
+        return false
+    }
     
     SI nameTrimmed.length > 100 ENTONCES
         RETORNAR false
