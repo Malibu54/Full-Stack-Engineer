@@ -295,8 +295,7 @@ FIN setupEventListeners */
 }
 
 function handleFormSubmit() {
-    /**INICIO handleFormSubmit
-    // Obtener datos del formulario
+
     contactData = {
         name: document.getElementById('name').value,
         email: document.getElementById('email').value,
@@ -307,15 +306,15 @@ function handleFormSubmit() {
     
     contactId = document.getElementById('contactId').value
     
-    SI editingContactId !== null ENTONCES
+    if (editingContactId !== null) {
         // Modo edición
         updateContact(editingContactId, contactData)
-    SINO
+}else{
         // Modo agregar
         addContact(contactData)
-    FIN SI
-FIN handleFormSubmit */
-}
+        }
+    }
+
 
 function name(params) {
     
