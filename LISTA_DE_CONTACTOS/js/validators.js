@@ -84,7 +84,7 @@ validateEmail(email)
     // Expresión regular para validar email
     regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
     
-    RETORNAR regex.test(emailTrimmed)
+    return regex.test(emailTrimmed)
 FIN validateEmail
      */
 
