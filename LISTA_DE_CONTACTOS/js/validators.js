@@ -268,7 +268,7 @@ function clearForm(params) {
 FIN clearForm */
 }
 
-function setupEventListeners(params) {
+function setupEventListeners() {
     /**INICIO setupEventListeners
     // Event listener para el formulario 
     form = document.getElementById('contactForm')
