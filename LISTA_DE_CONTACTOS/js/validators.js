@@ -84,8 +84,6 @@ function validateEmail(email) {
     regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
     return regex.test(emailTrimmed)
-    validateEmail
-
 
 }
 
