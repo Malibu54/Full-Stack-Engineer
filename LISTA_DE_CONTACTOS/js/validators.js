@@ -248,7 +248,7 @@ FIN editContact
 
 }
 
-function clearForm(params) {
+function clearForm() {
     /**INICIO clearForm
     // Limpiar todos los campos
     document.getElementById('contactForm').reset()
