@@ -90,8 +90,7 @@ function validateEmail(email) {
 }
 
 function validatePhone(phone) {
-    /**
-     * INICIO validatePhone(phone)
+
    if (phone == null) {
         return false
     }
@@ -105,9 +104,8 @@ function validatePhone(phone) {
     // Permitir números, espacios, guiones, paréntesis y signo +
     regex = /^[\d\s\-\(\)\+]+$/
     
-    RETORNAR regex.test(phoneTrimmed)
-FIN validatePhone
-     */
+   return regex.test(phoneTrimmed)
+
 }
 
 function validateBirthdate(birthdate) {
