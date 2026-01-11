@@ -86,7 +86,7 @@ validateEmail(email)
     
     return regex.test(emailTrimmed)
 FIN validateEmail
-     */
+
 
 }
 
