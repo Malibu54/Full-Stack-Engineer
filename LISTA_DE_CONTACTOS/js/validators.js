@@ -61,14 +61,14 @@ function validateName(name) {
         return false
     }
     
-    SI nameTrimmed.length > 100 ENTONCES
-        RETORNAR false
-    FIN SI
+    if (nameTrimmed.length > 100) {
+        return false
+    F}
     
     // Verificar que contenga solo letras, espacios y algunos caracteres especiales
     regex = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s'-]+$/
     
-    RETORNAR regex.test(nameTrimmed)
+    return regex.test(nameTrimmed)
 FIN validateName
      */
 }
