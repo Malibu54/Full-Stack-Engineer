@@ -316,6 +316,3 @@ function handleFormSubmit() {
     }
 
 
-function name(params) {
-    
-}
