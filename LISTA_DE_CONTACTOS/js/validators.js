@@ -49,7 +49,7 @@ function validateForm(contactData) {
 }
 
 function validateName(name) {
-    validateName(name)
+  
     if (name == null) {
         return false
     }
