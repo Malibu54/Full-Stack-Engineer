@@ -73,7 +73,7 @@ function validateName(name) {
 }
 
 function validateEmail(email) {
-    validateEmail(email)
+  
     if (email == null) {
         return false
     }
