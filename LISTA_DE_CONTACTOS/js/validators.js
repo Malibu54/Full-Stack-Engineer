@@ -30,20 +30,15 @@ function validateForm(contactData) {
         error.push("La fecha de nacimiento no es valida")
     }
 
-    // Validar URL de imagen (si se proporciona)
-    if(contactData.imageUrgl !==){
-
-    }
+// Validar URL de imagen (si se proporciona)
+if (contactData.imageUrl !== "" && !validateImageUrl(contactData.imageUrl)) {
+    errors.push("La URL de la imagen no es válida");
+}
 
 
     /**
      * INICIO validateForm(contactData)
 
-     
-     // Validar URL de imagen (si se proporciona)
-     SI contactData.imageUrl !== "" Y NO validateImageUrl(contactData.imageUrl) ENTONCES
-         errors.push("La URL de la imagen no es válida")
-     FIN SI
      
      SI errors.length > 0 ENTONCES
          // Mostrar todos los errores
