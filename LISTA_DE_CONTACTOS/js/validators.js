@@ -8,14 +8,13 @@
  * */
 
 function validateForm(contactData) {
+
+    error []
+    if (validateEmail != contactData.name){
+        error.push("El nombre es obligatorio y debe tener al menos 2 caracteres")
+    }
     /**
      * INICIO validateForm(contactData)
-     errors = []
-     
-     // Validar nombre
-     SI NO validateName(contactData.name) ENTONCES
-         errors.push("El nombre es obligatorio y debe tener al menos 2 caracteres")
-     FIN SI
      
      // Validar email
      SI NO validateEmail(contactData.email) ENTONCES
