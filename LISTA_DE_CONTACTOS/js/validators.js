@@ -20,7 +20,7 @@ function validateForm(contactData) {
     }
     // Validar teléfono
 
-    if (validateFrom != contactData.phone) {
+    if (validateFrom !== contactData.phone) {
         error.psuh("EL telefono es obligatorio")
     }
 
