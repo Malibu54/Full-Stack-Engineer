@@ -34,21 +34,14 @@ function validateForm(contactData) {
     if (contactData.imageUrl !== "" && !validateImageUrl(contactData.imageUrl)) {
         errors.push("La URL de la imagen no es válida");
     }
+ if (error.length > 0){
+    // Mostrar todos los errores
+    console.log("Error en la lista")
+    return false
+ }
 
+ return true
 
-    /**
-     * INICIO validateForm(contactData)
-
-     
-     SI errors.length > 0 ENTONCES
-         // Mostrar todos los errores
-         MOSTRAR alerta de error con lista de errores
-         RETORNAR false
-     FIN SI
-     
-     RETORNAR true
- FIN validateForm
-     */
 }
 
 function validateName(name) {
