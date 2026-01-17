@@ -9,20 +9,20 @@
 
 function validateForm(contactData) {
 
-    error []
-    if (validateEmail != contactData.name){
+    error[]
+    if (validateEmail != contactData.name) {
         error.push("El nombre es obligatorio y debe tener al menos 2 caracteres")
     }
 
-        // Validar email
-        if(validateEmail != contactData.email){
-            error.push("El email no es valido")
-        }
- // Validar teléfono
+    // Validar email
+    if (validateEmail != contactData.email) {
+        error.push("El email no es valido")
+    }
+    // Validar teléfono
 
- if (validateFrom != contactData.phone){
-    error.psuh("EL telefono es obligatorio")
- }
+    if (validateFrom != contactData.phone) {
+        error.psuh("EL telefono es obligatorio")
+    }
 
     /**
      * INICIO validateForm(contactData)
@@ -263,17 +263,17 @@ function setupEventListeners() {
 
     // Event listener para el formulario 
     form = document.getElementById('contactForm')
-    form.addEventListener('submit', function(contactForm) {
+    form.addEventListener('submit', function (contactForm) {
         contactFrom.preventDefault()
         handleFormSubmit()
     })
-    
+
     // Event listener para el botón cancelar
     cancelBtn = document.getElementById('cancelBtn')
-    cancelBtn.addEventListener('click', function(contactFrom) {
+    cancelBtn.addEventListener('click', function (contactFrom) {
         clearForm()
     })
-    
+
     // Validación en tiempo real para cada campo
     document.getElementById('name').addEventListener('blur', validarCampoNombre)
     document.getElementById('email').addEventListener('blur', validarCampoEmail)
