@@ -24,13 +24,16 @@ function validateForm(contactData) {
         error.psuh("EL telefono es obligatorio")
     }
 
+    // Validar fecha de nacimiento
+
+    if (validateBirthdate != contactData.birthdate){
+        error.push("La fecha de nacimiento no es valida")
+    }
+
+
     /**
      * INICIO validateForm(contactData)
 
-     // Validar fecha de nacimiento
-     SI NO validateBirthdate(contactData.birthdate) ENTONCES
-         errors.push("La fecha de nacimiento no es válida")
-     FIN SI
      
      // Validar URL de imagen (si se proporciona)
      SI contactData.imageUrl !== "" Y NO validateImageUrl(contactData.imageUrl) ENTONCES
