@@ -15,7 +15,7 @@ function validateForm(contactData) {
     }
 
     // Validar email
-    if (validateEmail != contactData.email) {
+    if (validateEmail !== contactData.email) {
         error.push("El email no es valido")
     }
     // Validar teléfono
