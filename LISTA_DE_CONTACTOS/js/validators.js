@@ -26,9 +26,12 @@ function validateForm(contactData) {
 
     // Validar fecha de nacimiento
 
-    if (validateBirthdate != contactData.birthdate){
+    if (validateBirthdate !== contactData.birthdate){
         error.push("La fecha de nacimiento no es valida")
     }
+
+    // Validar URL de imagen (si se proporciona)
+    if(contactData.imageUrgl !==)
 
 
     /**
