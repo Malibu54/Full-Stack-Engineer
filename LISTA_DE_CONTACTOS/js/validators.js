@@ -18,14 +18,15 @@ function validateForm(contactData) {
         if(validateEmail != contactData.email){
             error.push("El email no es valido")
         }
+ // Validar teléfono
+
+ if (validateFrom != contactData.phone){
+    error.psuh("EL telefono es obligatorio")
+ }
+
     /**
      * INICIO validateForm(contactData)
-     
-     // Validar teléfono
-     SI NO validatePhone(contactData.phone) ENTONCES
-         errors.push("El teléfono es obligatorio")
-     FIN SI
-     
+
      // Validar fecha de nacimiento
      SI NO validateBirthdate(contactData.birthdate) ENTONCES
          errors.push("La fecha de nacimiento no es válida")
