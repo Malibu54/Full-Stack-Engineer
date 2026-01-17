@@ -21,7 +21,7 @@ function validateForm(contactData) {
     // Validar teléfono
 
     if (validateFrom !== contactData.phone) {
-        error.psuh("EL telefono es obligatorio")
+        error.push("EL telefono es obligatorio")
     }
 
     // Validar fecha de nacimiento
@@ -31,7 +31,9 @@ function validateForm(contactData) {
     }
 
     // Validar URL de imagen (si se proporciona)
-    if(contactData.imageUrgl !==)
+    if(contactData.imageUrgl !==){
+
+    }
 
 
     /**
