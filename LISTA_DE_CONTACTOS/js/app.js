@@ -5,22 +5,23 @@
  * Carga inicial de contactos
  * */
 
+// ============================================================================
+// INICIALIZACIÓN
+// ============================================================================
+
 function initializeApp() {
-    contacts = loadFromLocalStorage()
-
-    if (contacts === null || contacts.length === 0) {
-        contacts = []
-    }
-    renderContactTable()
-
-    setupEventListeners()
-    console.log('App de Contactos iniciada');
+    console.log('🚀 Inicializando Sistema de Gestión de Contactos...');
+    
+    loadContacts();
+    renderContactsTable();
+    setupEventListeners();
+    
+    console.log(`✅ Aplicación iniciada. ${contacts.length} contactos cargados.`);
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+// Inicializar cuando el DOM esté listo
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initializeApp);
+} else {
     initializeApp();
-    
-    console.log("Sistema de gestión de contactos iniciado");
-    console.log("Total de contactos:", contacts.length);
-});
-
+}
