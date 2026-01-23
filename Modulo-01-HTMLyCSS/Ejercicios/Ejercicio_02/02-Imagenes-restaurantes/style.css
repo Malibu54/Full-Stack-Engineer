@@ -1,0 +1,39 @@
+:root {
+    --fuente-principal: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    font-family: var(--fuente-principal);
+}
+
+* {
+    background-color: cadetblue;
+}
+
+h1 {
+    color: yellow;
+    text-align: center;
+}
+
+img {
+    border: 5px solid white;
+}
+
+.primera-fila {
+    max-width: 1400px;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.segunda-fila {
+    max-width: 1400px;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    flex-wrap: wrap;
+}
