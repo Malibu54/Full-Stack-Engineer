@@ -1,0 +1,49 @@
+:root {
+    --fuente-lucida: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    font-family: var(--fuente-lucida);
+}
+
+h1,
+h3 {
+    color: #c05497;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+div {
+    color: #6679ac;
+}
+
+.logo-container {
+    text-align: center;
+}
+
+.logo-disney-hotels {
+    width: 500px;
+    height: 250px;
+}
+
+.disneys-pop-century-resort {
+    width: 500px;
+    height: 280px;
+    float: right;
+}
+
+.disneys-caribbean-beach-resort {
+    width: 500px;
+    height: 280px;
+    float: left;
+}
+
+.disneys-animal-kingdom-lodge {
+    width: 500px;
+    height: 400px;
+    float: right;
+}
+
+.mickey-minnie {
+    width: 1500px;
+    height: 800px;
+}
