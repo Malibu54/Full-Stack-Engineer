@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- #Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="/Modulo 1 - HTML y CSS/07 - Multimedia y Tablas/css/styles.css">
+    <link rel="stylesheet" href="/Modulo 1 - HTML y CSS/07 - Multimedia y Tablas/css/tables.css">
+
+    <title>Tablas HTML</title>
+  </head>
+
+  <body>
+    <header class="main-header">
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <!-- #Enlaces del menú de navegación -->
+          <li class="nav-item"><a href="/index.html">Home</a></li>
+
+          <li class="nav-item">
+            <a href="/pages/tables/tables.html">Tablas HTML</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="/pages/multimedia/multimedia.html">Multimedia</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="user-info">
+        <img
+          src="https://png.pngtree.com/png-vector/20240611/ourmid/pngtree-user-profile-icon-image-vector-png-image_12640450.png"
+          alt="Imagen del perfil del usuario"
+          class="user-avatar"
+        />
+
+        <i class="fa-solid fa-cart-shopping cart-icon"></i>
+      </div>
+    </header>
+    <h1>Tablas HTML</h1>
+
+    <div class="table-responsive">
+      <table border="1" class="superhero-table">
+        <thead>
+          <!-- Cabecera de la tabla -->
+          <tr>
+            <th>Imagen</th>
+            <th>Nombre</th>
+            <th>Descripción</th>
+            <th>Superpoder</th>
+            <th>Pelicula</th>
+            <th>Link Wiki</th>
+            <th>Tools</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Cuerpo de la tabla -->
+          <tr>
+            <td class="image-cell">
+              <img
+                src="/assets/images/avatar/1.png"
+                alt="The Groot"
+                class="table-image"
+              />
+            </td>
+
+            <td class="name-cell">Groot</td>
+
+            <td class="description-cell">
+              <div class="description">
+                Cabe mencionar que Groot es, posiblemente, el único personaje de
+                Marvel que habla un idioma distinto, que es como si solo dijera
+                su nombre todo el tiempo "Yo soy Groot".
+              </div>
+            </td>
+
+            <td class="power-cell">
+              <ul>
+                <li>Estirarse</li>
+                <li>Regenerarse</li>
+              </ul>
+            </td>
+
+            <td class="movie-cell">Guardianes de la Galaxia</td>
+
+            <td class="wiki-cell">
+              <a href="https://es.wikipedia.org/wiki/Groot" target="_blank"
+                >Wiki Groot</a
+              >
+            </td>
+
+            <td class="tools-cell">
+              <div class="icon-container">
+                <button class="btn" title="Editar superheroe">
+                  <i class="fa-solid fa-pencil"></i>
+                </button>
+
+                <button class="btn btn-danger" title="Eliminar superheroe">
+                  <i class="fa-solid fa-trash"></i>
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="image-cell">
+              <img
+                src="/assets/images/avatar/2.png"
+                alt="Wolverine"
+                class="table-image"
+              />
+            </td>
+
+            <td class="name-cell">Wolverine</td>
+
+            <td class="description-cell">
+              Es un mutante que posee sentidos afinados a los animales,
+              capacidades físicas mejoradas, poderosa capacidad de regeneración
+              conocida como un factor de curación, y tres garras retráctiles en
+              cada mano
+            </td>
+
+            <td class="power-cell">
+              <ul>
+                <li>Fuerza sobrehumana</li>
+                <li>Garras Adamantium</li>
+              </ul>
+            </td>
+
+            <td class="movie-cell">X-Men</td>
+
+            <td class="wiki-cell">
+              <a href="https://es.wikipedia.org/wiki/Wolverine" target="_blank"
+                >Wiki Wolverine</a
+              >
+            </td>
+
+            <td class="tools-cell">
+              <div class="icon-container">
+                <button class="btn">
+                  <i class="fa-solid fa-pencil"></i>
+                </button>
+
+                <button class="btn btn-danger">
+                  <i class="fa-solid fa-trash"></i>
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="image-cell">
+              <img
+                src="/assets/images/avatar/4.png"
+                alt="Black panther"
+                class="table-image"
+              />
+            </td>
+
+            <td class="name-cell">Black Panther</td>
+
+            <td class="description-cell">
+              Es el rey y protector de la ficticia nación africana de Wakanda.
+              Además de poseer habilidades mejoradas logradas a través de
+              rituales antiguos de Wakanda de beber la esencia de la hierba en
+              forma de corazón, T'Challa también confía en su dominio de la
+              ciencia, el entrenamiento físico riguroso, las habilidades de
+              combate mano a mano y el acceso a la riqueza y la avanzada
+              tecnología de Wakanda para combatir a sus enemigos que amenacen su
+              cultura y tradiciones
+            </td>
+
+            <td class="power-cell">
+              <ul>
+                <li>
+                  Fuerza sobrehumana, velocidad, reflejos, agilidad,
+                  resistencia, durabilidad, curación y sentidos.
+                </li>
+                <li>Utiliza traje, armas y equipo vibranium</li>
+              </ul>
+            </td>
+
+            <td class="movie-cell">Black Panther</td>
+
+            <td class="wiki-cell">
+              <a
+                href="https://es.wikipedia.org/wiki/Pantera_Negra_(c%C3%B3mic)"
+                target="_blank"
+                >Wiki Black Panther</a
+              >
+            </td>
+
+            <td class="tools-cell">
+              <div class="icon-container">
+                <button class="btn">
+                  <i class="fa-solid fa-pencil"></i>
+                </button>
+                <button class="btn">
+                  <i class="fa-solid fa-pencil"></i>
+                </button>
+
+                <button class="btn btn-danger">
+                  <i class="fa-solid fa-trash"></i>
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="image-cell">
+              <img
+                src="/assets/images/avatar/6.png"
+                alt="Wolverine"
+                class="table-image"
+              />
+            </td>
+
+            <td class="name-cell">Iron Man</td>
+
+            <td class="description-cell">
+              Iron Man es el personaje de superhéroe de Anthony Edward "Tony"
+              Stark, un multimillonario magnate empresarial, filántropo
+              estadounidense, playboy y un ingenioso científico e ingeniero, que
+              dirige la empresa de fabricación de armas Industrias Stark. Cuando
+              Stark fue capturado en una zona de guerra y sufrió una herida
+              grave en el corazón, construyó su armadura de Iron Man y escapó de
+              sus captores. Las armaduras de Iron Man le otorgan fuerza
+              sobrehumana, vuelo, proyección de energía y otras habilidades.
+            </td>
+
+            <td class="power-cell">
+              <ul>
+                <li>Superfuerza, durabilidad y resistencia por armadura.</li>
+                <li>
+                  Uso de equipamiento, dispositivos y armamento de alta
+                  tecnología.
+                </li>
+              </ul>
+            </td>
+
+            <td class="movie-cell">Iron Man</td>
+
+            <td class="wiki-cell">
+              <a href="https://es.wikipedia.org/wiki/Iron_Man" target="_blank"
+                >Wiki Iron Man</a
+              >
+            </td>
+
+            <td class="tools-cell">
+              <div class="icon-container">
+                <button class="btn">
+                  <i class="fa-solid fa-pencil"></i>
+                </button>
+
+                <button class="btn">
+                  <i class="fa-solid fa-trash"></i>
+                </button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <td colspan="5">Total</td>
+            <td colspan="2">$ 150000</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+
+    <h1>TEXTO</h1>
+  </body>
+</html>
