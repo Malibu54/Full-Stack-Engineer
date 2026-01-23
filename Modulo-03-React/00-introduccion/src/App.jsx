@@ -2,9 +2,8 @@ import './App.css'
 
 function App() {
 
-
   return (
- <h1>Hola desde React!</h1>
+    <h1>Hola desde React!</h1>
   )
 }
 
