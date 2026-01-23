@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!-- Head -->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/Integrador/frontend-primer-etapa/assets/favicon.png" type="image/x-icon" />
+    <meta name="description"
+        content="Luna Shop - La mejor tienda de lunas premium. Descubre nuestra colección exclusiva con Luna Llena, Luna Azul y más. Envío en órbita garantizado." />
+    <meta name="keywords" content="lunas, luna llena, luna nueva, tienda lunar, astronomía, fases lunares" />
+    <meta name="author" content="Luna Shop" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Luna Shop - Tu Tienda de Lunas Premium" />
+    <meta property="og:description" content="Descubre nuestra colección exclusiva de lunas para iluminar tu vida" />
+    <meta property="og:type" content="website" />
+
+    <!-- Security -->
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self' 'unsafe-inline' cdn.jsdelivr.net cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' cdn.jsdelivr.net cdnjs.cloudflare.com; font-src 'self' cdnjs.cloudflare.com;" />
+
+    <title>Luna Shop - Detalle de Producto</title>
+
+    <!-- Preload Critical Resources -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="/Integrador/frontend-primer-etapa/css/style.css" />
+</head>
+<!-- Head END -->
+
+<!-- Body -->
+<body>
+
+<!-- NavBar -->
+<nav class="navbar navbar-expand-lg fixed-top" role="navigation" aria-label="Navegación principal">
+  <div class="container">
+    <!-- Brand -->
+    <a class="navbar-brand" href="/Integrador/frontend-primer-etapa/index.html" aria-label="Luna Shop - Inicio">
+      <i class="fas fa-moon"></i> Luna Shop
+    </a>
+
+    <!-- Botón hamburguesa -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegación">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menú colapsable -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <!-- Links principales -->
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/Integrador/frontend-primer-etapa/Pages/principal.html">Principal</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/Integrador/frontend-primer-etapa/Pages/Registro.html">Registro</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/Integrador/frontend-primer-etapa/Pages/acerca-de-nosotros.html">Acerca de nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/Integrador/frontend-primer-etapa/Pages/admin-productos.html">Admin Productos</a>
+        </li>
+      </ul>
+
+      <!-- Sección de usuario -->
+      <div class="d-flex align-items-center ms-3">
+        <!-- Avatar -->
+        <img src="/Integrador/frontend-primer-etapa/assets/avatar.png"
+             alt="Avatar de usuario"
+             class="rounded-circle me-3"
+             width="32" height="32">
+
+        <!-- Carrito -->
+        <div class="dropdown">
+          <button class="btn btn-outline-light position-relative" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false" aria-label="Ver carrito de compras">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-badge" id="cart-count">0</span>
+          </button>
+
+          <div class="dropdown-menu dropdown-menu-end cart-dropdown" aria-labelledby="cartDropdown">
+            <div class="dropdown-header">Tu Carrito</div>
+            <div id="cart-items" role="list">
+              <div class="text-center p-3 text-muted">El carrito está vacío</div>
+            </div>
+            <div class="dropdown-divider"></div>
+            <div class="p-3">
+              <div class="d-flex justify-content-between mb-2">
+                <strong>Total: $<span id="cart-total">0</span></strong>
+              </div>
+              <button class="btn btn-custom btn-sm w-100" disabled>Proceder al Pago</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- NavBar END -->
+
+    <!-- Main -->
+    <main>
+        <main class="detalle-section py-5 mt-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Imagen del producto -->
+                    <div class="col-md-6 text-center">
+                        <img src="/Integrador/frontend-primer-etapa/assets/luna_plateada.png" alt="Luna Plateada"
+                            class="img-fluid rounded shadow-lg" />
+                    </div>
+
+                    <!-- Información del producto -->
+                    <div class="col-md-6">
+                        <h2 class="mb-3 text-warning">Luna Plateada</h2>
+                        <p class="text-muted">Categoría: Decoración</p>
+                        <p>
+                            La Luna Plateada es un producto exclusivo de Luna Shop, ideal
+                            para iluminar tus noches con un brillo suave y elegante.
+                            Perfecta para decorar tu hogar o regalar a alguien especial.
+                        </p>
+                        <ul class="list-unstyled mb-3">
+                            <li>
+                                <i class="fas fa-check-circle text-warning"></i> Tamaño: 40 cm
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle text-warning"></i> Material:
+                                Aleación premium
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle text-warning"></i> Garantía: 2
+                                años
+                            </li>
+                        </ul>
+                        <h4 class="text-success">$1,200</h4>
+                        <button class="btn btn-warning mt-3">Comprar ahora</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </main>
+    <!-- Main END-->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row text-center text-md-start">
+                <!-- Columna 1: Logo y nombre -->
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5><i class="fas fa-moon"></i> Luna Shop</h5>
+                    <p>Tu tienda de confianza para lunas de calidad premium.</p>
+                </div>
+
+                <!-- Columna 2: Redes sociales -->
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Síguenos</h5>
+                    <div>
+                        <a href="#" class="social-link me-3"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#" class="social-link me-3"><i class="fab fa-twitter fa-2x"></i></a>
+                        <a href="#" class="social-link me-3"><i class="fab fa-instagram fa-2x"></i></a>
+                    </div>
+                </div>
+
+                <!-- Columna 3: Contacto -->
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <p>
+                        <i class="fas fa-map-marker-alt me-2"></i>Vía Láctea, Sector 7
+                    </p>
+                    <p><i class="fas fa-phone me-2"></i>+1-800-LUNA-SHOP</p>
+                    <p><i class="fas fa-envelope me-2"></i>info@lunashop.galaxy</p>
+                </div>
+            </div>
+
+            <hr class="mt-4" />
+            <div class="text-center">
+                <p>
+                    &copy; 2025 Luna Shop. Todos los derechos reservados en todo el
+                    universo.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer END -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+<!-- Body END-->
+
+</html>
