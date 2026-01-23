@@ -1,0 +1,108 @@
+.superhero-table {
+    border-collapse: collapse;
+    margin: 1rem;
+    border: 2px solid rgb(102, 138, 247);
+
+    th {
+        padding: .5rem 1rem;
+        background-color: royalblue;
+        color: white;
+        font-weight: 500;
+    }
+
+    tbody tr:nth-child(odd) {
+        background-color: rgb(232, 238, 253);
+    }
+
+
+    tr {
+
+        > td {
+            padding: 8px;
+        }
+    }
+
+    .image-cell {
+        text-align: center;
+
+        .table-image {
+            width: 70px;
+            height: 70px;
+            /* border-radius: 50%; */
+            object-fit: cover;
+            filter: drop-shadow(4px 4px 4px #222)
+        }
+    }
+
+    .name-cell {
+        /* padding: 8px;  */
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .description-cell {
+        /* padding: 8px; */
+        /* display: -webkit-box;
+        line-clamp: 3;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden; */
+    }
+
+    .power-cell {
+        /* padding: 8px; */
+        
+        ul {
+            list-style: "🚀";
+            padding-left: 1.5rem;
+            line-height: 1.75;
+        }
+    }
+
+    .movie-cell {
+        /* padding: 8px; */
+    }
+
+    .tools-cell {
+        .icon-container {
+          
+            display: flex;
+            gap: .5rem;
+            justify-content: center;
+
+            .btn {
+                background-color: royalblue;
+                border: none;
+                outline: none;
+                padding: .25rem;
+                min-width: 24px;
+                cursor: pointer;
+                color: white;
+                border-radius: 2px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &.btn-danger {
+                    background-color: crimson;
+
+                    &:hover {
+                        background-color: red;
+                    }
+                }
+
+                &:hover {
+                    background-color: rgb(46, 80, 182);
+                }
+            }
+
+            
+            /* text-align: center; */
+        }
+    }
+}
+
+.table-responsive {
+    width: 100%;
+    overflow-x: scroll;
+}
