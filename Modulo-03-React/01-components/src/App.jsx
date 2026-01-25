@@ -7,7 +7,9 @@ export default function App (){
  
  return (
   <> 
-  <Title/>
+  <Title titulo="Primer titulo"/>
+  <Title titulo="Segundo titulo"/>
+  <Title titulo="Tercer titulo"/>
   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta veritatis molestias repudiandae sapiente commodi vero aliquid iusto provident aut eveniet.</p>
   </>
  )
