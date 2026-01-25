@@ -4,7 +4,7 @@ function Title(props){
         <>
         <h1 className="titulo">{props.titulo}</h1>
         <hr />
-        <h2>Subtitulo del Componente</h2>
+        <h2 className="subtitulo">{props.subtitulo}</h2>
         </>
     )
 }
